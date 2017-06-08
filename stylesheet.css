@@ -1,0 +1,22 @@
+/* http://paletton.com/palette.php?uid=33s0q0ktGi8sEMDkNr8OT6AuJ2c */
+
+html {
+  background-color: #346d89;
+}
+
+body {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: 80px;
+  margin-right: auto;
+  font-family: Helvetica, Verdana, Tahoma, Arial, Sans-serif;
+  font-size: 1em;
+  width: 820px;
+  padding: 0px;
+}
+
+div#content {
+  background-color: #d8ae4c;
+  border-radius: 8px;
+  padding: 8px;
+}
