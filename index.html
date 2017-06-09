@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Chris Donahue</title>
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
 
     <!--
     <script>
@@ -22,7 +22,12 @@
   <body>
     <div id="content">
       <h1>Chris Donahue</h1>
-      <h2>christopherdonahue@gmail.com</h2>
+      <h3>
+	      <b>Email: </b>
+	      <span id="email">
+		      <noscript><i>Enable Javascript to view e-mail address</i></noscript>
+	      </span>
+      </h3>
       <hr>
       <section id="intro">
 	      <p>I am a PhD candidate at the University of California, San Diego studying computer music. I am co-advised by <a href="http://msp.ucsd.edu/">Miller Puckette</a> (music) and <a href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a> (computer science). My main research focus is the application of machine learning to audio signal processing and music information retrieval.</p>
@@ -81,11 +86,12 @@
       </section>
       
     </div>
+    <script type="text/javascript" src="js/scramble.js"></script>
     <script type="text/javascript">
-      function autorun()
-      {
-
+      function autorun() {
+        emailScramble = new scrambledString(document.getElementById('email'), 'emailScramble', 'rmniaocughcsto@opdhlahrm.eei', [2, 20, 13, 3, 21, 12, 25, 16, 19, 1, 0, 4, 5, 26, 18, 6, 7, 11, 8, 23, 14, 15, 10, 27, 24, 17, 9, 22]);
       }
+
       if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
       else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
       else window.onload = autorun;
