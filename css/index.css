@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 80px;
   margin-right: auto;
@@ -16,11 +16,16 @@ body {
   padding: 0px;
 }
 
+a.quiet {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* content */
 
 div#content {
   background-color: #EAEAEA;
-  border-radius: 10px;
+  border-radius: 0px;
   padding: 10px;
 }
 
@@ -54,6 +59,12 @@ ul#links img {
   height: auto;
 }
 
+img#headshot {
+  display: inline;
+  width: 36px;
+  height: auto;
+}
+
 /* sep */
 
 div#sep-placeholder hr {
@@ -65,7 +76,7 @@ div#sep-placeholder hr {
 div#nostring-sep {
   position: absolute;
   left: 80px;
-  top: 119px;
+  top: 99px; /* HEADER-SENSITIVE */
   background-color: #000000;
   height: 3px;
   width: 820px;
@@ -74,7 +85,7 @@ div#nostring-sep {
 div#amod {
   position: absolute;
   left: 0px;
-  top: 91px;
+  top: 71px; /* HEADER-SENSITIVE */
 }
 
 div#amod img {
@@ -89,7 +100,37 @@ div#string-sep {
 
 /* content */
 
-a.quiet {
-  text-decoration: none;
-  color: inherit;
+/* publications */
+
+section#publications ul{
+  list-style: none;
+}
+
+section#publications ul li {
+  margin-bottom: 10px;
+}
+
+span.paper-authors {
+  display: block;
+}
+
+span.paper-title {
+  display: block;
+  font-weight: bold;
+}
+
+span.paper-venue {
+  display: block;
+}
+
+span.paper-hyperlinks {
+  display: block;
+}
+
+section#work ul {
+  list-style: none;
+}
+
+section#work ul li {
+  margin-bottom: 10px;
 }
