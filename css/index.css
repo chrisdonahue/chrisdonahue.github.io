@@ -16,9 +16,14 @@ body {
   padding: 0px;
 }
 
-a.quiet {
+a {
+  color: #4F58C9;
   text-decoration: none;
+}
+
+a.quiet {
   color: inherit;
+  text-decoration: none;
 }
 
 /* content */
@@ -59,12 +64,6 @@ ul#links img {
   height: auto;
 }
 
-img#headshot {
-  display: inline;
-  width: 36px;
-  height: auto;
-}
-
 /* sep */
 
 div#sep-placeholder hr {
@@ -100,6 +99,14 @@ div#string-sep {
 
 /* content */
 
+/* intro */
+
+section#intro img {
+  width: 120px;
+  height: auto;
+  margin-right: 10px;
+}
+
 /* publications */
 
 section#publications ul{
@@ -125,6 +132,7 @@ span.paper-venue {
 
 span.paper-hyperlinks {
   display: block;
+  font-size: 0.8em;
 }
 
 section#work ul {
