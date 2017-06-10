@@ -1,11 +1,12 @@
+/* global */
 /* http://paletton.com/palette.php?uid=33s0q0ktGi8sEMDkNr8OT6AuJ2c */
 
 html {
-  background-color: #346d89;
+  background-color: #6969C9;
 }
 
 body {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 0px;
   margin-left: 80px;
   margin-right: auto;
@@ -15,12 +16,80 @@ body {
   padding: 0px;
 }
 
+/* content */
+
 div#content {
-  background-color: #d8ae4c;
-  border-radius: 8px;
-  padding: 8px;
+  background-color: #EAEAEA;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* header */
+
+div#above-sep {
+  height: 80px;
+  overflow: hidden;
+}
+
+h1#chris {
+  display: inline;
 }
 
 a#unscramble {
   cursor: pointer;
+}
+
+ul#links {
+  float: right;
+  list-style: none;
+  display: inline;
+}
+
+ul#links li {
+  display: inline;
+}
+
+ul#links img {
+  width: 48px;
+  height: auto;
+}
+
+/* sep */
+
+div#sep-placeholder hr {
+  padding: 0px;
+  border-top: 5px solid #FF0000;
+  border-bottom: 0px solid #000000;
+}
+
+div#nostring-sep {
+  position: absolute;
+  left: 80px;
+  top: 119px;
+  background-color: #000000;
+  height: 3px;
+  width: 820px;
+}
+
+div#amod {
+  position: absolute;
+  left: 0px;
+  top: 98px;
+}
+
+div#amod img {
+  width: 80px;
+  height: auto;
+}
+
+div#string-sep {
+  position: absolute;
+  left: 0px;
+}
+
+/* content */
+
+a.quiet {
+  text-decoration: none;
+  color: inherit;
 }

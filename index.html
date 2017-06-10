@@ -11,7 +11,6 @@
     <!--<link rel="stylesheet" href="css/reset.css" type="text/css">-->
     <link rel="stylesheet" href="css/index.css" type="text/css">
 
-    <!--
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -21,85 +20,88 @@
       ga('create', 'UA-50109714-2', 'auto');
       ga('send', 'pageview');
     </script>
-    -->
   </head>
 
   <body>
+    <div id="amod">
+      <img src="img/amod.png"/>
+    </div>
+    <div id="nostring-sep"></div>
+    <div id="string-sep" style="display: none;">
+      <canvas id="string-canvas"></canvas>
+    </div>
+
     <div id="content">
-      <h1>Chris Donahue</h1>
-      <h3>
-	      <b>Email: </b>
-	      <span id="email">
-		      <noscript><i>Enable Javascript to view e-mail address</i></noscript>
-	      </span>
-      </h3>
-      <hr>
+      <div id="above-sep">
+        <h1 id="chris">Chris Donahue</h1>
+        <ul id="links">
+          <li><a href="https://github.com/chrisdonahue"><img src="img/logos/github.png"/></a></li>
+          <li><a href="https://twitter.com/chrisdonahuey"><img src="img/logos/twitter.png"/></a></li>
+          <li><a href="https://scholar.google.com/citations?user=MgzHAPQAAAAJ&hl=en"><img src="img/logos/gscholar.png"/></a></li>
+        </ul>
+        <h3>
+          <b>Email: </b>
+          <span id="email">
+            <noscript><i>Enable Javascript to view e-mail address</i></noscript>
+          </span>
+        </h3>
+      </div>
+      <div id="sep-placeholder" style="visibility: hidden;">
+        <hr>
+      </div>
       <section id="intro">
-	      <p>I am a PhD candidate at the University of California, San Diego studying computer music. I am co-advised by <a href="http://msp.ucsd.edu/">Miller Puckette</a> (music) and <a href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a> (computer science). My main research focus is the application of machine learning to audio signal processing and music information retrieval.</p>
-	      <p>In 2013 I received a BS in computer science from the Turing Scholars Program at the University of Texas at Austin. In 2016 I received an MA in computer music from UCSD.</p>
-	      <ul id="links">
-		      <li><a href="https://github.com/chrisdonahue">GitHub</a></li>
-		      <li><a href="https://twitter.com/chrisdonahuey">Twitter</a></li>
-		      <li><a href="https://scholar.google.com/citations?user=MgzHAPQAAAAJ&hl=en">Google Scholar</a></li>
-	      </ul>
+        <p>I am a PhD candidate at the University of California, San Diego studying computer music. I am co-advised by <a href="http://msp.ucsd.edu/">Miller Puckette</a> (music) and <a href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a> (computer science). My main research focus is the application of machine learning to audio signal processing and music information retrieval.</p>
+        <p>In 2013 I received a BS in computer science from the Turing Scholars Program at the University of Texas at Austin. In 2016 I received an MA in computer music from UCSD.</p>
       </section>
       <section id="publications">
         <h2>Publications</h2>
-	<ul>
+        <ul>
           <li>
-		  Chris Donahue, Akshay Balsubramani, Julian McAuley, Zachary C. Lipton<br>
-		  Semantically Decomposing the Latent Spaces of Generative Adversarial Networks [arXiv, pdf, BibTeX]<br>
-		  <i>arXiv:1705.07904</i>, 2017.
-	  </li>
+            Chris Donahue, <a class="quiet" href="http://web.stanford.edu/~abalsubr/">Akshay Balsubramani</a>, <a class="quiet" href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>, <a class="quiet" href="http://zacklipton.com/">Zachary C. Lipton</a><br>
+	    Semantically Decomposing the Latent Spaces of Generative Adversarial Networks [<a href="https://arxiv.org/abs/1705.07904">arXiv</a>, <a href="https://arxiv.org/pdf/1705.07904.pdf">pdf</a>, <a href="bib/2017_arxiv_sdgan.bib">BibTeX</a>]<br>
+            <i>arXiv:1705.07904</i>, 2017.
+          </li>
           <li>
-		  Chris Donahue, Zachary C. Lipton, Julian McAuley<br>
-		  Dance Dance Convolution [arXiv, pdf, BibTeX, dataset]<br>
-		  In <i>Proceedings of the International Conference on Machine Learning</i>, 2017.
-	  </li>
+            Chris Donahue, <a class="quiet" href="http://zacklipton.com">Zachary C. Lipton</a>, <a class="quiet" href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a><br>
+	    Dance Dance Convolution [<a href="https://arxiv.org/abs/1703.06891">arXiv</a>, <a href="https://arxiv.org/pdf/1703.06891.pdf">pdf</a>, <a href="bib/2017_icml_ddc.bib">BibTeX</a>, <a href="https://github.com/chrisdonahue/ddc">dataset</a>, <a href="http://deepx.ucsd.edu/ddc">demo</a>]<br>
+            In <i>Proceedings of the International Conference on Machine Learning</i>, 2017.
+          </li>
           <li>
-		  Chris Donahue (advised by <a href="http://msp.ucsd.edu/">Miller Puckette</a>, <a href="http://www.soundhack.com/">Tom Erbe</a> and <a href="http://musicweb.ucsd.edu/~trsmyth/">Tamara Smyth</a>)<br>
-		  Extensions to Convolution for Generalized Cross-Synthesis [pdf, BibTeX]<br>
-		  <i>Master's thesis</i>, 2016
-	  </li>
+            Chris Donahue (advised by <a class="quiet" href="http://msp.ucsd.edu/">Miller Puckette</a>, <a class="quiet" href="http://www.soundhack.com/">Tom Erbe</a> and <a class="quiet" href="http://musicweb.ucsd.edu/~trsmyth/">Tamara Smyth</a>)<br>
+	    Extensions to Convolution for Generalized Cross-Synthesis [<a href="pdf/2016_ucsd_eccs.pdf">pdf</a>, <a href="bib/2016_ucsd_eccs.bib">BibTeX</a>, <a href="http://rfs1k.ucsd.edu/">dataset</a>]<br>
+            <i>Master's thesis</i>, 2016
+          </li>
           <li>
-		  Chris Donahue, Tom Erbe, Miller Puckette<br>
-		  Extended Convolution Techniques for Cross-Synthesis [pdf, BibTeX]<br>
-		  In <i>Proceedings of the International Computer Music Conference</i>, 2016
-	  </li>
+            Chris Donahue, <a class="quiet" href="http://www.soundhack.com/">Tom Erbe</a>, <a class="quiet" href="http://msp.ucsd.edu/">Miller Puckette</a><br>
+	    Extended Convolution Techniques for Cross-Synthesis [<a href="pdf/2016_icmc_eccs.pdf">pdf</a>, <a href="bib/2016_icmc_eccs.bib">BibTeX</a>, <a href="http://rfs1k.ucsd.edu/">dataset</a>]<br>
+            In <i>Proceedings of the International Computer Music Conference</i>, 2016
+          </li>
           <li>
-		  Chris Donahue (advised by <a href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a> and <a href="http://russellpinkston.com/">Russell Pinkston</a>)<br>
-		  Applications of genetic programming to digital audio synthesis [<a href="http://apps.cs.utexas.edu/tech_reports/reports/tr/TR-2156.pdf">pdf</a>, BibTeX]<br>
-		  <i>Undergraduate honors thesis TR-2156</i>, 2013
-	  </li>
+            Chris Donahue (advised by <a class="quiet" href="https://www.cs.utexas.edu/~pstone/">Peter Stone</a> and <a class="quiet" href="http://russellpinkston.com/">Russell Pinkston</a>)<br>
+	    Applications of genetic programming to digital audio synthesis [<a href="http://apps.cs.utexas.edu/tech_reports/reports/tr/TR-2156.pdf">pdf</a>, <a href="bib/2013_ut_evosynth.bib">BibTeX</a>]<br>
+            <i>Undergraduate honors thesis TR-2156</i>, 2013
+          </li>
         </ul>
       </section>
       <section id="work">
         <h2>Work Experience</h2>
         <ul>
-		<li><b>(Summer 2017)</b> Internship at Google (Speech Recognition)</li>
-		<li><b>(Summer 2016)</b> Internship at Google Search</li>
-		<li><b>(Summer 2015)</b> Internship at Google Play Music</li>
-		<li><b>(Summer 2014)</b> Internship at Famigo</li>
-		<li><b>(Summer 2013)</b> Internship at Docbook MD</li>
-		<li><b>(Summer 2012)</b> Internship at Qualcomm</li>
-		<li><b>(Summer 2011)</b> Internship at UT Applied Research Laboratories</li>
-		<li><b>(2011-2013)</b> Student mentor for UT Freshman Research Initiative advised by <a href="http://joellehman.com/">Joel Lehman</a> and <a href="https://www.cs.utexas.edu/~risto/">Risto Miikkulainen</a></li>
+          <li><b>(Summer 2017)</b> Internship at <a href="https://www.google.com/">Google</a> (Speech Recognition w/ <a class="quiet" href="https://research.google.com/pubs/BoLi.html">Bo Li</a>)</li>
+	  <li><b>(Summer 2016)</b> Internship at <a class="quiet" href="https://www.google.com/">Google Search</a></li>
+	  <li><b>(Summer 2015)</b> Internship at <a class="quiet" href="https://play.google.com/music">Google Play Music</a> (MIR w/ <a href="http://www-etud.iro.umontreal.ca/~boulanni/">Nicolas Boulanger-Lewandowski</a>)</li>
+	  <li><b>(Summer 2014)</b> Internship at <a class="quiet" href="https://en.wikipedia.org/wiki/Famigo">Famigo</a></li>
+	  <li><b>(Summer 2013)</b> Internship at <a class="quiet" href="https://www.scrypt.com/docbookmd/">Docbook MD</a></li>
+	  <li><b>(Summer 2012)</b> Internship at <a class="quiet" href="https://www.qualcomm.com/">Qualcomm</a></li>
+	  <li><b>(Summer 2011)</b> Internship at <a class="quiet" href="https://wwwext.arlut.utexas.edu/sgl.html">UT Applied Research Laboratories</a></li>
+	  <li><b>(2011-2013)</b> Student mentor for <a class="quiet" href="https://cns.utexas.edu/fri">UT Freshman Research Initiative</a> advised by <a href="http://joellehman.com/">Joel Lehman</a> and <a href="https://www.cs.utexas.edu/~risto/">Risto Miikkulainen</a></li>
         </ul>
       </section>
       <section id="other">
         <p><i>Last updated 2017/06/08</i></p>
       </section>
-      
     </div>
-    <script type="text/javascript" src="js/scramble.js"></script>
-    <script type="text/javascript">
-      function autorun() {
-        emailScramble = new scrambledString(document.getElementById('email'), 'emailScramble', 'rmniaocughcsto@opdhlahrm.eei', [2, 20, 13, 3, 21, 12, 25, 16, 19, 1, 0, 4, 5, 26, 18, 6, 7, 11, 8, 23, 14, 15, 10, 27, 24, 17, 9, 22]);
-      }
 
-      if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
-      else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
-      else window.onload = autorun;
-    </script>
+    <script type="text/javascript" src="js/scramble.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
