@@ -21,6 +21,18 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
 a.quiet {
   color: inherit;
   text-decoration: none;
@@ -82,6 +94,7 @@ div#nostring-sep {
 }
 
 div#amod {
+  visibility: hidden;
   position: absolute;
   left: 0px;
   top: 71px; /* HEADER-SENSITIVE */
@@ -102,9 +115,14 @@ div#string-sep {
 /* intro */
 
 section#intro img {
-  width: 120px;
+  width: 160px;
   height: auto;
-  margin-right: 10px;
+  margin-right: 50px;
+}
+
+section#intro {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* publications */
@@ -135,6 +153,8 @@ span.paper-hyperlinks {
   font-size: 0.8em;
 }
 
+/* work */
+
 section#work ul {
   list-style: none;
 }
@@ -142,3 +162,11 @@ section#work ul {
 section#work ul li {
   margin-bottom: 10px;
 }
+
+/* other */
+
+section#other p {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
