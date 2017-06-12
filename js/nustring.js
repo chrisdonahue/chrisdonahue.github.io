@@ -1,184 +1,158 @@
 window.nustring = window.nustring || {};
 
 (function (nustring) {
-    nustring.classes = {};
-    (function (classes) {
-        var DelayLine = classes.DelayLine = function (maxDelaySamps) {
-            this.buffer = new Float32Array(maxDelaySamps);
-            this.bufferLen = maxDelaySamps;
-            this.writeIdx = 0;
-        };
-        DelayLine.prototype.readOne = function (delaySamps) {
-            var readIdx = this.writeIdx - delaySamps;
-            while (readIdx < 0) {
-                readIdx += this.bufferLen;
-            }
-            return this.buffer[readIdx];
-        };
-        DelayLine.prototype.writeOne = function (value) {
-            this.buffer[this.writeIdx] = value;
-            ++this.writeIdx;
-            while (this.writeIdx >= this.bufferLen) {
-                this.writeIdx -= this.bufferLen;
-            }
-        };
+  var debug = true;
 
-        var KarplusStrong = classes.KarplusStrongStringAudio = function (audioCtx, config) {
-            this.audioCtx = audioCtx;
+  var DelayLine = nustring.DelayLine = function (maxDelaySamps) {
+    this.buffer = new Float32Array(maxDelaySamps);
+    this.bufferLen = maxDelaySamps;
+    this.writeIdx = 0;
+  };
+  DelayLine.prototype.readOne = function (delaySamps) {
+    var readIdx = this.writeIdx - delaySamps;
+    while (readIdx < 0) {
+      readIdx += this.bufferLen;
+    }
+    return this.buffer[readIdx];
+  };
+  DelayLine.prototype.writeOne = function (value) {
+    this.buffer[this.writeIdx] = value;
+    ++this.writeIdx;
+    while (this.writeIdx >= this.bufferLen) {
+      this.writeIdx -= this.bufferLen;
+    }
+  };
+  DelayLine.prototype.getLength = function () {
+    return this.bufferLen;
+  };
 
-            this.ksLength = 256;
-            this.pluckRemaining = 0;
-            this.pluckIntensity = 0;
-            this.rmsAmp = 0.0;
 
-            var scriptProcessor = audioCtx.createScriptProcessor(1024, 1, 1);
-            var delayLine = new DelayLine(config.maxDelaySamps);
-            var filterPrev = 0.0;
+  var KarplusStrong = nustring.KarplusStrong = function (audioCtx, config) {
+    this.stringAudioCtx = audioCtx;
 
-            var that = this;
-            scriptProcessor.onaudioprocess = function (event) {
-                var input = event.inputBuffer;
-                var output = event.outputBuffer;
+    this.ksLength = 256;
+    this.pluckRemaining = 0;
+    this.pluckIntensity = 0;
+    this.rmsAmp = 0.0;
 
-                var rmsTotal = 0.0;
+    var scriptProcessor = this.scriptProcessor = audioCtx.createScriptProcessor(1024, 1, 1);
+    var delayLine = this.delayLine = new DelayLine(config.maxDelaySamps);
+    var filterPrev = 0.0;
 
-                for (var channel = 0; channel < output.numberOfChannels; ++channel) {
-                    var inputChannel = input.getChannelData(channel);
-                    var outputChannel = output.getChannelData(channel);
+    var that = this;
+    scriptProcessor.onaudioprocess = function (event) {
+      var input = event.inputBuffer;
+      var output = event.outputBuffer;
 
-                    for (var i = 0; i < input.length; ++i) {
-                        var noise = 0.0;
-                        if (that.pluckRemaining > 0) {
-                            noise = (Math.random() * 2.0) - 1.0;
-                            noise *= that.pluckIntensity;
-                            --that.pluckRemaining;
-                        }
+      var rmsTotal = 0.0;
 
-                        var feedback = delayLine.readOne(that.ksLength);
-                        var filteredFeedback = (filterPrev + feedback) * 0.5;
-                        filterPrev = feedback;
+      for (var channel = 0; channel < output.numberOfChannels; ++channel) {
+        var inputChannel = input.getChannelData(channel);
+        var outputChannel = output.getChannelData(channel);
 
-                        var output = noise + filteredFeedback;
+        for (var i = 0; i < input.length; ++i) {
+          var noise = 0.0;
+          if (that.pluckRemaining > 0) {
+            noise = (Math.random() * 2.0) - 1.0;
+            noise *= that.pluckIntensity;
+            --that.pluckRemaining;
+          }
 
-                        outputChannel[i] = output;
-                        delayLine.writeOne(output);
+          var feedback = delayLine.readOne(that.ksLength);
+          var filteredFeedback = (filterPrev + feedback) * 0.5;
+          filterPrev = feedback;
 
-                        rmsTotal += output * output;
-                    }
-                    that.rmsAmp = Math.sqrt(rmsTotal / input.length);
-                }
-            };
+          var output = noise + filteredFeedback;
 
-            this.scriptProcessor = scriptProcessor;
-        };
-        KarplusStrongString.prototype.pluck = function(pluckIntensity) {
-            this.pluckRemaining = this.ksLength;
-            this.pluckIntensity = pluckIntensity;
-            if (config.debug) {
-                console.log(this.pluckRemaining);
-            }
-        };
-        KarplusStrongString.prototype.setLength = function(lengthSamples) {
-            this.ksLength = lengthSamples;
-        };
-        KarplusStrongString.prototype.getRmsAmp = function() {
-            return this.rmsAmp;
-        };
+          outputChannel[i] = output;
+          delayLine.writeOne(output);
 
-        var CanvasPluckString = classes.CanvasPluckString = function (stringAudio, canvas, config) {
-            this.stringAudio = stringAudio;
-            this.canvas = canvas;
+          rmsTotal += output * output;
+        }
+        that.rmsAmp = Math.sqrt(rmsTotal / input.length);
+      }
+    };
+  };
+  KarplusStrong.prototype.pluck = function(pluckIntensity) {
+    this.pluckRemaining = this.ksLength;
+    this.pluckIntensity = pluckIntensity;
+  };
+  KarplusStrong.prototype.setLength = function(lengthSamples) {
+    this.ksLength = Math.min(lengthSamples, this.delayLine.getLength());
+  };
+  KarplusStrong.prototype.getRmsAmp = function() {
+    return this.rmsAmp;
+  };
 
-            this.maxDeviation = config.stringMaxDeviation;
-            this.thickness = config.stringThickness;
-            this.phaseInc = config.stringPhaseInc;
-            this.controlPointSpacing = config.controlPointSpacing;
-        };
-        KarplusStrongStringVideo
-    })(nustring.classes);
 
-        var onWindowResize = function (event) {
-            canvasWidth = $(window).width();
-            canvasBuffer.width = canvasWidth;
-            canvas.width = canvasWidth;
+  var CanvasPluckString = nustring.CanvasPluckString = function (stringAudio, canvas, config) {
+    this.stringAudio = stringAudio;
+    this.canvas = canvas;
+    this.canvasCtx = this.canvas.getContext('2d');
 
-            string.setLength(Math.min(Math.round(canvasWidth / 2), config.maxDelaySamps));
+    this.canvasWidth = canvas.width;
+    this.canvasHeight = canvas.height;
 
-            repaintFull();
-        };
+    this.canvasBuffer = document.createElement('canvas');
+    this.canvasBufferCtx = this.canvasBuffer.getContext('2d');
+    this.canvasBuffer.width = this.canvasWidth;
+    this.canvasBuffer.height = this.canvasHeight;
 
-        var repaintBuffer = function () {
-            var ctx = canvasBufferCtx;
+    this.maxDeviation = config.maxDeviation;
+    this.thickness = config.thickness;
+    this.phaseInc = config.phaseInc;
+    this.controlPointSpacing = config.controlPointSpacing;
 
-            // clear buffer
-            ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-            if (config.debug) {
-                ctx.fillStyle = 'green';
-                ctx.fillRect(0, 0, canvasWidth, canvasHeight);
-            }
-        };
+    this.phase = 0.0;
+  };
+  CanvasPluckString.prototype.onCanvasResize = function (event) {
+    this.canvasWidth = $(window).width();
+    canvasBuffer.width = this.canvasWidth;
+    canvas.width = this.canvasWidth;
 
-        var repaintObjects = function () {
-            var ctx = canvasCtx;
+    this.stringAudio.setLength(Math.round(this.canvasWidth / 2));
 
-            // draw buffer
-            ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-            ctx.drawImage(canvasBuffer, 0, 0);
+    repaintFull();
+  };
+  CanvasPluckString.prototype.repaintBuffer = function () {
+    var ctx = this.canvasBufferCtx;
 
-            // draw line
-            var stringY = config.stringMaxDeviation - (config.stringThickness / 2);
-            var rmsAmp = string.getRmsAmp();
-            var stringDevRel = Math.sin(stringGfxPhase) * rmsAmp;
-            var stringDevAbs = stringDevRel * config.stringMaxDeviation;
+    // clear buffer
+    ctx.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
+    if (debug) {
+      ctx.fillStyle = 'green';
+      ctx.fillRect(0, 0, this.canvasWidth, this.canvasHeight);
+    }
+  };
+  CanvasPluckString.prototype.repaintObjects = function () {
+    var ctx = this.canvasCtx;
 
-            ctx.strokeStyle = 'black';
-            ctx.lineWidth = config.stringThickness;
-            ctx.beginPath();
-            ctx.moveTo(0, stringY);
-            ctx.bezierCurveTo(
-                0, stringY + stringDevAbs,
-                canvasWidth, stringY + stringDevAbs,
-                canvasWidth, stringY
-            )
-            ctx.stroke();
+    // draw buffer
+    ctx.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
+    ctx.drawImage(this.canvasBuffer, 0, 0);
 
-            stringGfxPhase += config.stringGfxPhaseInc;
-        };
+    // draw line
+    var stringY = this.maxDeviation - (this.thickness / 2);
+    var rmsAmp = this.stringAudio.getRmsAmp();
+    var stringDevRel = Math.sin(this.phase) * rmsAmp;
+    var stringDevAbs = stringDevRel * this.maxDeviation;
 
-        var repaintFull = function () {
-            repaintBuffer();
-            repaintObjects();
-        };
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = this.thickness;
+    ctx.beginPath();
+    ctx.moveTo(0, stringY);
+    ctx.bezierCurveTo(
+      0, stringY + stringDevAbs,
+      this.canvasWidth, stringY + stringDevAbs,
+      this.canvasWidth, stringY
+    )
+    ctx.stroke();
 
-        var animate = function () {
-            repaintFull();
-            window.requestAnimationFrame(animate);
-        };
-
-        // exports
-        client.onDomReady = function (event) {
-            /*
-            $canvas.on('mousedown', onCanvasMouseDown);
-            $canvas.on('mousemove', onCanvasMouseMove)
-            */
-
-            // init video
-            var $canvas = $('#nustring');
-            canvas = $canvas.get(0);
-            canvasCtx = canvas.getContext('2d');
-            canvasHeight = config.stringMaxDeviation * 2;
-            canvas.height = canvasHeight;
-            canvasBuffer.height = canvasHeight;
-
-            // attach callbacks
-            $(window).resize(onWindowResize);
-            onWindowResize();
-            var button = $('#pluck');
-            button.on('click', function () {string.pluck.call(string, Math.random());});
-
-            // start animation
-            animate();
-        };
-    })($, nustring.config, nustring.classes, nustring.client);
+    this.phase += this.phaseInc;
+  };
+  CanvasPluckString.prototype.repaintFull = function () {
+    this.repaintBuffer();
+    this.repaintObjects();
+  };
 
 })(window.nustring);
