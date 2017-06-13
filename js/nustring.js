@@ -1,7 +1,7 @@
 window.nustring = window.nustring || {};
 
 (function (nustring) {
-  var debug = true;
+  var debug = false;
 
   var DelayLine = nustring.DelayLine = function (maxDelaySamps) {
     this.buffer = new Float32Array(maxDelaySamps);
@@ -133,7 +133,7 @@ window.nustring = window.nustring || {};
     ctx.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
     if (debug) {
       ctx.fillStyle = 'green';
-      ctx.fillRect(0, 0, this.canvasWidth, this.canvasHeight);
+      //ctx.fillRect(0, 0, this.canvasWidth, this.canvasHeight);
     }
 
     // draw mouse

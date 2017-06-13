@@ -121,6 +121,7 @@ div#amod img {
 }
 
 div#string-sep {
+  /*pointer-events: none;*/
   position: absolute;
   left: 80px;
 }

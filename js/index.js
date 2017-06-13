@@ -73,18 +73,17 @@ window.requestAnimationFrame = (function () {
 
   /* Resize callback */
   var onResize = function ()  {
-    //var x = document.getElementsByTagName("BODY")[0];
-
     var stringPlaceholder = document.getElementById('sep-placeholder');
     var stringBb = stringPlaceholder.getBoundingClientRect();
     var stringY = (stringBb.bottom + stringBb.top) / 2.0;
-    var stringWidth = stringBb.right - stringBb.left;
 
-    var stringDiv = document.getElementById('string-sep');
-    stringDiv.style.top = stringY;
-    console.log(stringY);
+    var bodyBb = document.getElementsByTagName('body')[0].getBoundingClientRect();
+    var stringWidth = bodyBb.right - bodyBb.left;
 
-    stringVideo.setDimensions(stringWidth, null);
+    var stringHeight = stringY * 2;
+    console.log(stringHeight);
+
+    stringVideo.setDimensions(stringWidth, stringHeight);
   };
 
   /* DOM ready callback */
