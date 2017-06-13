@@ -21,10 +21,10 @@ window.requestAnimationFrame = (function () {
       maxDelaySamps: 960
     },
     stringVideo: {
-      maxDeviation: 32,
-      thickness: 3,
+      maxDeviation: 80,
+      thickness: null,
       phaseInc: 0.5, 
-      controlPointSpacing: 50
+      controlTimeoutMs: 50
     },
     gain: 1.0
   };
@@ -42,6 +42,7 @@ window.requestAnimationFrame = (function () {
   })();
 
   /* Pluck string widget */
+  var stringVideo = null;
   var initString = function () {
     // audio
     if (!(supportsAudio && supportsCanvas))
@@ -50,9 +51,11 @@ window.requestAnimationFrame = (function () {
     var audioCtx = new window.AudioContext();
     var stringAudio = new nustring.KarplusStrong(audioCtx, config.stringAudio);
 
-    // video
+    // video    
     var stringCanvas = document.getElementById('string-canvas');
-    var stringVideo = new nustring.CanvasPluckString(stringAudio, stringCanvas, config.stringVideo);
+    var nostringBb = document.getElementById('nostring-sep').getBoundingClientRect();
+    config.stringVideo.thickness = nostringBb.bottom - nostringBb.top;
+    stringVideo = new nustring.CanvasPluckString(stringAudio, stringCanvas, config.stringVideo);
 
     // hear
     var gainNode = audioCtx.createGain();
@@ -62,35 +65,39 @@ window.requestAnimationFrame = (function () {
 
     // see
     var animate = function () {
-      stringVideo.repaintFull();
+      stringVideo.repaint();
       window.requestAnimationFrame(animate);
     }
     animate();
-
-    // show
-    document.getElementById('nostring-sep').style.display = 'none';
-    document.getElementById('string-sep').style.display = 'block';
   };
 
   /* Resize callback */
   var onResize = function ()  {
+    //var x = document.getElementsByTagName("BODY")[0];
+
     var stringPlaceholder = document.getElementById('sep-placeholder');
     var stringBb = stringPlaceholder.getBoundingClientRect();
     var stringY = (stringBb.bottom + stringBb.top) / 2.0;
+    var stringWidth = stringBb.right - stringBb.left;
 
     var stringDiv = document.getElementById('string-sep');
-    var stringCanvas = document.getElementById('string-canvas');
     stringDiv.style.top = stringY;
     console.log(stringY);
+
+    stringVideo.setDimensions(stringWidth, null);
   };
 
   /* DOM ready callback */
   var domReady = function () {
+    initEmailScramble();
+    
+    initString();
     window.addEventListener('resize', onResize);
     onResize();
 
-    initEmailScramble();
-    initString();
+    // show
+    document.getElementById('nostring-sep').style.display = 'none';
+    document.getElementById('string-sep').style.display = 'block';
   };
 
   /* Attach callbacks */

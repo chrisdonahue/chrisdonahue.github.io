@@ -84,7 +84,6 @@ window.nustring = window.nustring || {};
     return this.rmsAmp;
   };
 
-
   var CanvasPluckString = nustring.CanvasPluckString = function (stringAudio, canvas, config) {
     this.stringAudio = stringAudio;
     this.canvas = canvas;
@@ -101,38 +100,62 @@ window.nustring = window.nustring || {};
     this.maxDeviation = config.maxDeviation;
     this.thickness = config.thickness;
     this.phaseInc = config.phaseInc;
-    this.controlPointSpacing = config.controlPointSpacing;
 
     this.phase = 0.0;
+
+    this.mouseLast = null;
+    this.mouse = null;
+    this.canvas.addEventListener('mousemove', this._onMouseMove.bind(this));
+
+    setInterval(this._controlTimeout.bind(this), config.controlTimeoutMs);
   };
-  CanvasPluckString.prototype.onCanvasResize = function (event) {
-    this.canvasWidth = $(window).width();
-    canvasBuffer.width = this.canvasWidth;
-    canvas.width = this.canvasWidth;
+  CanvasPluckString.prototype.setDimensions = function (width, height) {
+    if (width !== null) {
+      this.canvasBuffer.width = width;
+      this.canvas.width = width;
+      this.canvasWidth = width;
 
-    this.stringAudio.setLength(Math.round(this.canvasWidth / 2));
+      this.stringAudio.setLength(Math.round(this.canvasWidth / 2));
+    }
 
-    repaintFull();
+    if (height !== null) {
+      this.canvasBuffer.height = height;
+      this.canvas.height = height;
+      this.canvasHeight = height;
+    }
+
+    this.repaint();
   };
-  CanvasPluckString.prototype.repaintBuffer = function () {
-    var ctx = this.canvasBufferCtx;
+  CanvasPluckString.prototype.repaint = function () {
+    var ctx = this.canvasCtx;
 
-    // clear buffer
+    // draw background
     ctx.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
     if (debug) {
       ctx.fillStyle = 'green';
       ctx.fillRect(0, 0, this.canvasWidth, this.canvasHeight);
     }
-  };
-  CanvasPluckString.prototype.repaintObjects = function () {
-    var ctx = this.canvasCtx;
 
-    // draw buffer
-    ctx.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
-    ctx.drawImage(this.canvasBuffer, 0, 0);
+    // draw mouse
+    if (debug) {
+      if (this.mouse !== null) {
+        ctx.fillStyle = 'blue';
+        ctx.beginPath();
+        ctx.arc(this.mouse.x, this.mouse.y, 10, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+      }
+      if (this.mouseLast !== null) {
+        ctx.fillStyle = 'red';
+        ctx.beginPath();
+        ctx.arc(this.mouseLast.x, this.mouseLast.y, 10, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+      }
+    }
 
     // draw line
-    var stringY = this.maxDeviation - (this.thickness / 2);
+    var stringY = this._relToAbs(0.0);
     var rmsAmp = this.stringAudio.getRmsAmp();
     var stringDevRel = Math.sin(this.phase) * rmsAmp;
     var stringDevAbs = stringDevRel * this.maxDeviation;
@@ -148,11 +171,46 @@ window.nustring = window.nustring || {};
     )
     ctx.stroke();
 
+    // increment phase
     this.phase += this.phaseInc;
   };
-  CanvasPluckString.prototype.repaintFull = function () {
-    this.repaintBuffer();
-    this.repaintObjects();
+  CanvasPluckString.prototype._onMouseMove = function (event) {
+    var canvasBb = this.canvas.getBoundingClientRect();
+    this.mouse = {
+      x: event.clientX - canvasBb.left,
+      y: event.clientY - canvasBb.top
+    };
+  };
+  CanvasPluckString.prototype._controlTimeout = function () {
+    if (this.mouseLast !== null) {
+      var mouseLastYRel = this._absToRel(this.mouseLast.y);
+      var mouseYRel = this._absToRel(this.mouse.y);
+      if (mouseYRel * mouseLastYRel < 0.0) {
+        var pluckIntensity = Math.min(Math.abs(mouseYRel - mouseLastYRel) * 0.5, 1.0);
+        if (debug) {
+          console.log(pluckIntensity);
+        }
+        this.stringAudio.pluck(pluckIntensity);
+      }
+    }
+
+    this.mouseLast = this.mouse;
+  };
+  CanvasPluckString.prototype._relToAbs = function (yRel) {
+    var canvasHeightHalf = this.canvasHeight * 0.5;
+
+    var yNorm = yRel * this.maxDeviation;
+    var yAbs = canvasHeightHalf - yNorm;
+
+    return yAbs;
+  };
+  CanvasPluckString.prototype._absToRel = function (yAbs) {
+    var canvasHeightHalf = this.canvasHeight * 0.5;
+
+    var yNorm = canvasHeightHalf - yAbs;
+    var yRel = yNorm / this.maxDeviation;
+
+    return yRel;
   };
 
 })(window.nustring);
