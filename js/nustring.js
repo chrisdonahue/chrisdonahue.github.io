@@ -133,7 +133,7 @@ window.nustring = window.nustring || {};
     ctx.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
     if (debug) {
       ctx.fillStyle = 'green';
-      //ctx.fillRect(0, 0, this.canvasWidth, this.canvasHeight);
+      ctx.fillRect(0, 0, this.canvasWidth, this.canvasHeight);
     }
 
     // draw mouse

@@ -28,7 +28,7 @@ window.requestAnimationFrame = (function () {
       phaseInc: 0.5, 
       controlTimeoutMs: 50
     },
-    gain: 1.0
+    gain: 0.3
   };
 
   /* Email scrambler */
@@ -83,7 +83,6 @@ window.requestAnimationFrame = (function () {
     var stringWidth = bodyBb.right - bodyBb.left;
 
     var stringHeight = stringY * 2;
-    console.log(stringHeight);
 
     stringVideo.setDimensions(stringWidth, stringHeight);
   };
