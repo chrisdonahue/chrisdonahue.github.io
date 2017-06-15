@@ -41,7 +41,7 @@
     var audioCtx = new window.AudioContext();
     var stringAudio = new nustring.KarplusStrong(audioCtx, config.stringAudio);
 
-    // video    
+    // video
     var stringCanvas = document.getElementById('string-canvas');
     var nostringBb = document.getElementById('nostring-sep').getBoundingClientRect();
     config.stringVideo.thickness = nostringBb.bottom - nostringBb.top;
@@ -59,14 +59,17 @@
 
   /* Resize callback */
   var onResize = function ()  {
-    var stringPlaceholder = document.getElementById('sep-placeholder');
-    var stringBb = stringPlaceholder.getBoundingClientRect();
+    var stringBb = document.getElementById('sep-placeholder').getBoundingClientRect();
     var stringY = (stringBb.bottom + stringBb.top) / 2.0;
 
     var bodyBb = document.getElementsByTagName('body')[0].getBoundingClientRect();
     var stringWidth = bodyBb.right - bodyBb.left;
 
-    var stringHeight = stringY * 2;
+    var aboveStringBb = document.getElementById('above-sep').getBoundingClientRect();
+    var belowStringBb = document.getElementById('below-sep').getBoundingClientRect();
+    var stringHeight = belowStringBb.top - aboveStringBb.bottom;
+
+    document.getElementById('string-sep').style.top = String(aboveStringBb.bottom) + 'px';
 
     stringVideo.setDimensions(stringWidth, stringHeight);
   };
