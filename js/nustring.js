@@ -13,8 +13,7 @@ window.requestAnimationFrame = (function () {
 window.nustring = window.nustring || {};
 
 (function (nustring) {
-  var debug = true;
-
+  var debug = false;
 
   var DelayLine = nustring.DelayLine = function (maxDelaySamps) {
     this.buffer = new Float32Array(maxDelaySamps);
@@ -110,6 +109,7 @@ window.nustring = window.nustring || {};
     this.canvasBuffer.width = this.canvasWidth;
     this.canvasBuffer.height = this.canvasHeight;
 
+    this.rmsSaturator = config.rmsSaturator;
     this.maxDeviation = config.maxDeviation;
     this.thickness = config.thickness;
     this.phaseInc = config.phaseInc;
@@ -121,6 +121,9 @@ window.nustring = window.nustring || {};
     this.canvas.addEventListener('mousemove', this._onMouseMove.bind(this));
 
     setInterval(this._controlTimeout.bind(this), config.controlTimeoutMs);
+  };
+  CanvasPluckString.prototype.setMaxDeviation = function (maxDeviation) {
+    this.maxDeviation = maxDeviation;
   };
   CanvasPluckString.prototype.setDimensions = function (width, height) {
     if (width !== null) {
@@ -169,7 +172,7 @@ window.nustring = window.nustring || {};
 
     // draw line
     var stringY = this._relToAbs(0.0);
-    var rmsAmp = this.stringAudio.getRmsAmp();
+    var rmsAmp = Math.min(this.stringAudio.getRmsAmp() * this.rmsSaturator, 1.0);
     var stringDevRel = Math.sin(this.phase) * rmsAmp;
     var stringDevAbs = stringDevRel * this.maxDeviation;
 
@@ -210,7 +213,7 @@ window.nustring = window.nustring || {};
       if (mouseYRel * mouseLastYRel < 0.0) {
         var pluckIntensity = Math.min(Math.abs(mouseYRel - mouseLastYRel) * 0.5, 1.0);
         if (debug) {
-          console.log(pluckIntensity);
+          console.log('Pluck intensity: ' + String(pluckIntensity));
         }
         this.stringAudio.pluck(pluckIntensity);
       }

@@ -11,9 +11,10 @@
       decayFactor: 0.98
     },
     stringVideo: {
-      maxDeviation: 80,
+      rmsSaturator: 2.0,
+      maxDeviation: 37,
       thickness: null,
-      phaseInc: 0.5, 
+      phaseInc: 0.5,
       controlTimeoutMs: 50
     },
     gain: 0.3
@@ -59,9 +60,6 @@
 
   /* Resize callback */
   var onResize = function ()  {
-    var stringBb = document.getElementById('sep-placeholder').getBoundingClientRect();
-    var stringY = (stringBb.bottom + stringBb.top) / 2.0;
-
     var bodyBb = document.getElementsByTagName('body')[0].getBoundingClientRect();
     var stringWidth = bodyBb.right - bodyBb.left;
 
@@ -72,6 +70,7 @@
     document.getElementById('string-sep').style.top = String(aboveStringBb.bottom) + 'px';
 
     stringVideo.setDimensions(stringWidth, stringHeight);
+    stringVideo.setMaxDeviation(Math.floor(stringHeight / 2));
   };
 
   /* DOM ready callback */
@@ -81,6 +80,9 @@
     initString();
     window.addEventListener('resize', onResize);
     onResize();
+
+    var body = document.getElementsByTagName('body')[0];
+    body.addEventListener('mousemove', stringVideo._onMouseMove.bind(stringVideo));
 
     // show
     document.getElementById('nostring-sep').style.display = 'none';
