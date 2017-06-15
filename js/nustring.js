@@ -1,7 +1,20 @@
+// shim
+window.requestAnimationFrame = (function () {
+  return  window.requestAnimationFrame ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame ||
+          window.oRequestAnimationFrame ||
+          window.msRequestAnimationFrame ||
+          function (callback) {
+            window.setTimeout(callback, 1000 / 60);
+          };
+})();
+
 window.nustring = window.nustring || {};
 
 (function (nustring) {
-  var debug = false;
+  var debug = true;
+
 
   var DelayLine = nustring.DelayLine = function (maxDelaySamps) {
     this.buffer = new Float32Array(maxDelaySamps);
@@ -174,6 +187,15 @@ window.nustring = window.nustring || {};
     // increment phase
     this.phase += this.phaseInc;
   };
+  CanvasPluckString.prototype.startAnimation = function () {
+    this.animating = true;
+    this._animate();
+  }
+  CanvasPluckString.prototype.stopAnimation = function () {
+    console.log('lul');
+    console.log(this);
+    this.animating = false;
+  }
   CanvasPluckString.prototype._onMouseMove = function (event) {
     var canvasBb = this.canvas.getBoundingClientRect();
     this.mouse = {
@@ -212,5 +234,12 @@ window.nustring = window.nustring || {};
 
     return yRel;
   };
+  CanvasPluckString.prototype._animate = function () {
+    if (this.animating) {
+      this.repaint();
+      window.requestAnimationFrame(this._animate.bind(this));
+    }
+  };
+
 
 })(window.nustring);

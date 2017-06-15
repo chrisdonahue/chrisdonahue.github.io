@@ -1,15 +1,3 @@
-// shim
-window.requestAnimationFrame = (function () {
-  return  window.requestAnimationFrame ||
-          window.webkitRequestAnimationFrame ||
-          window.mozRequestAnimationFrame ||
-          window.oRequestAnimationFrame ||
-          window.msRequestAnimationFrame ||
-          function (callback) {
-            window.setTimeout(callback, 1000 / 60);
-          };
-})();
-
 (function () {
   var config = {
     debug: true,
@@ -66,11 +54,7 @@ window.requestAnimationFrame = (function () {
     gainNode.connect(audioCtx.destination);
 
     // see
-    var animate = function () {
-      stringVideo.repaint();
-      window.requestAnimationFrame(animate);
-    }
-    animate();
+    stringVideo.startAnimation();
   };
 
   /* Resize callback */
