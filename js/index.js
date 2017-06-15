@@ -17,7 +17,7 @@
       phaseInc: 0.5,
       controlTimeoutMs: 50
     },
-    gain: 0.3
+    gain: 0.1
   };
 
   /* Email scrambler */
