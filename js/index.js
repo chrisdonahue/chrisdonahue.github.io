@@ -18,7 +18,9 @@ window.requestAnimationFrame = (function () {
       permutation: [2, 20, 13, 3, 21, 12, 25, 16, 19, 1, 0, 4, 5, 26, 18, 6, 7, 11, 8, 23, 14, 15, 10, 27, 24, 17, 9, 22]
     },
     stringAudio: {
-      maxDelaySamps: 960
+      blockSize: 1024,
+      maxDelaySamps: 960,
+      decayFactor: 0.98
     },
     stringVideo: {
       maxDeviation: 80,

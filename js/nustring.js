@@ -34,44 +34,12 @@ window.nustring = window.nustring || {};
     this.pluckRemaining = 0;
     this.pluckIntensity = 0;
     this.rmsAmp = 0.0;
+    this.decayFactor = config.decayFactor;
+    this.delayLine = new DelayLine(config.maxDelaySamps);
+    this.filterPrev = 0.0;
 
-    var scriptProcessor = this.scriptProcessor = audioCtx.createScriptProcessor(1024, 1, 1);
-    var delayLine = this.delayLine = new DelayLine(config.maxDelaySamps);
-    var filterPrev = 0.0;
-
-    var that = this;
-    scriptProcessor.onaudioprocess = function (event) {
-      var input = event.inputBuffer;
-      var output = event.outputBuffer;
-
-      var rmsTotal = 0.0;
-
-      for (var channel = 0; channel < output.numberOfChannels; ++channel) {
-        var inputChannel = input.getChannelData(channel);
-        var outputChannel = output.getChannelData(channel);
-
-        for (var i = 0; i < input.length; ++i) {
-          var noise = 0.0;
-          if (that.pluckRemaining > 0) {
-            noise = (Math.random() * 2.0) - 1.0;
-            noise *= that.pluckIntensity;
-            --that.pluckRemaining;
-          }
-
-          var feedback = delayLine.readOne(that.ksLength);
-          var filteredFeedback = (filterPrev + feedback) * 0.5;
-          filterPrev = feedback;
-
-          var output = noise + filteredFeedback;
-
-          outputChannel[i] = output;
-          delayLine.writeOne(output);
-
-          rmsTotal += output * output;
-        }
-        that.rmsAmp = Math.sqrt(rmsTotal / input.length);
-      }
-    };
+    this.scriptProcessor = audioCtx.createScriptProcessor(config.blockSize, 1, 1);
+    this.scriptProcessor.onaudioprocess = this._onAudioProcess.bind(this)
   };
   KarplusStrong.prototype.pluck = function(pluckIntensity) {
     this.pluckRemaining = this.ksLength;
@@ -82,6 +50,38 @@ window.nustring = window.nustring || {};
   };
   KarplusStrong.prototype.getRmsAmp = function() {
     return this.rmsAmp;
+  };
+  KarplusStrong.prototype._onAudioProcess = function (event) {
+    var input = event.inputBuffer;
+    var output = event.outputBuffer;
+
+    var rmsTotal = 0.0;
+
+    for (var channel = 0; channel < output.numberOfChannels; ++channel) {
+      var inputChannel = input.getChannelData(channel);
+      var outputChannel = output.getChannelData(channel);
+
+      for (var i = 0; i < input.length; ++i) {
+        var noise = 0.0;
+        if (this.pluckRemaining > 0) {
+          noise = (Math.random() * 2.0) - 1.0;
+          noise *= this.pluckIntensity;
+          --this.pluckRemaining;
+        }
+
+        var feedback = this.delayLine.readOne(this.ksLength);
+        var filteredFeedback = (this.filterPrev + feedback) * 0.5;
+        this.filterPrev = feedback;
+
+        var output = noise + filteredFeedback;
+
+        outputChannel[i] = output;
+        this.delayLine.writeOne(output * this.decayFactor);
+
+        rmsTotal += output * output;
+      }
+      this.rmsAmp = Math.sqrt(rmsTotal / input.length);
+    }
   };
 
   var CanvasPluckString = nustring.CanvasPluckString = function (stringAudio, canvas, config) {
