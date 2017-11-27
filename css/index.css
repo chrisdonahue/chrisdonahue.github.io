@@ -181,6 +181,18 @@ section#work ul li {
   margin-bottom: 0em;
 }
 
+/* media */
+
+section#media ul {
+  list-style: none;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+section#media ul li {
+  margin-bottom: 0em;
+}
+
 /* other */
 
 section#other p {
