@@ -195,7 +195,12 @@ section#media ul li {
 
 /* other */
 
-section#other p {
+section#other ul {
+  list-style: none;
   margin-left: 40px;
   margin-right: 40px;
+}
+
+section#other ul li {
+  margin-bottom: 0em;
 }
