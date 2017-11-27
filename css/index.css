@@ -7,7 +7,7 @@
 }
 
 html {
-  background-color: #6969C9;
+  background-color: #EFEFEA;
 }
 
 body {
@@ -48,7 +48,7 @@ a.quiet {
 /* content */
 
 div#content {
-  background-color: #EAEAEA;
+  background-color: #FEFEFD;
   border-radius: 0px;
   padding: 10px;
 }
