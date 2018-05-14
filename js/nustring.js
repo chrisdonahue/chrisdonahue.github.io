@@ -38,9 +38,11 @@ window.nustring = window.nustring || {};
     return this.bufferLen;
   };
 
-
+  var globalAudioCtxChromeWorkaround = null;
+  var globalAudioCtxHasBeenResumed = false;
   var KarplusStrong = nustring.KarplusStrong = function (audioCtx, config) {
     this.stringAudioCtx = audioCtx;
+    globalAudioCtxChromeWorkaround = audioCtx;
 
     this.ksLength = 256;
     this.pluckRemaining = 0;
@@ -200,6 +202,11 @@ window.nustring = window.nustring || {};
     this.animating = false;
   }
   CanvasPluckString.prototype._onMouseMove = function (event) {
+    if (!globalAudioCtxHasBeenResumed && globalAudioCtxChromeWorkaround !== null) {
+        globalAudioCtxChromeWorkaround.resume();
+        globalAudioCtxHasBeenResumed = true;
+    }
+
     var canvasBb = this.canvas.getBoundingClientRect();
     this.mouse = {
       x: event.clientX - canvasBb.left,
