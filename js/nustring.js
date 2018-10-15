@@ -39,7 +39,6 @@ window.nustring = window.nustring || {};
   };
 
   var globalAudioCtxChromeWorkaround = null;
-  var globalAudioCtxHasBeenResumed = false;
   var KarplusStrong = nustring.KarplusStrong = function (audioCtx, config) {
     this.stringAudioCtx = audioCtx;
     globalAudioCtxChromeWorkaround = audioCtx;
@@ -202,9 +201,8 @@ window.nustring = window.nustring || {};
     this.animating = false;
   }
   CanvasPluckString.prototype._onMouseMove = function (event) {
-    if (!globalAudioCtxHasBeenResumed && globalAudioCtxChromeWorkaround !== null) {
+    if (globalAudioCtxChromeWorkaround !== null) {
         globalAudioCtxChromeWorkaround.resume();
-        globalAudioCtxHasBeenResumed = true;
     }
 
     var canvasBb = this.canvas.getBoundingClientRect();
