@@ -204,3 +204,8 @@ section#other ul {
 section#other ul li {
   margin-bottom: 0em;
 }
+
+section#media hr {
+  width: 75%;
+  margin: 4px auto;
+}
