@@ -2,8 +2,8 @@
   var config = {
     debug: true,
     email: {
-      permuted: 'cdddusu@cehaun.eo',
-      permutation: [0, 15, 12, 1, 9, 11, 16, 8, 10, 14, 5, 4, 6, 3, 13, 7, 2]
+      permuted: 'cudtf.ohe.@dronasseanduc',
+      permutation: [9, 23, 19, 13, 16, 20, 2, 5, 7, 11, 8, 22, 18, 17, 3, 14, 12, 10, 21, 4, 15, 1, 6, 0]
     },
     stringAudio: {
       blockSize: 1024,
