@@ -2,19 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <link rel="icon" href="favicon.ico" />
     <title>Chris Donahue</title>
 
     <!-- Meta tags for SEO and social sharing -->
     <link rel="canonical" href="https://chrisdonahue.com" />
-    <meta name="description" content="_BIO_" />
+    <meta
+      name="description"
+      content="I am a postdoc in the Stanford Computer Science Department working with Percy Liang. Previously, I obtained my PhD from UCSD where I was jointly advised by Julian McAuley (CS) and Miller Puckette (music).
+
+My research goal is to build music technology that enables a broader set of users to engage with music on a deeper level. To this end, I improve machine learning methods for generative modeling of music, audio, and other sequential data, and build real-world interactive music systems which allow a broader audience to harness the power of resultant models."
+    />
     <meta name="robots" content="index,follow" />
     <meta property="og:title" content="Chris Donahue" />
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://chrisdonahue.com" />
-    <meta property="og:description" content="_BIO_" />
-    <meta property="og:image" content="img/social.png" />
+    <meta
+      property="og:description"
+      content="I am a postdoc in the Stanford Computer Science Department working with Percy Liang. Previously, I obtained my PhD from UCSD where I was jointly advised by Julian McAuley (CS) and Miller Puckette (music).
+
+My research goal is to build music technology that enables a broader set of users to engage with music on a deeper level. To this end, I improve machine learning methods for generative modeling of music, audio, and other sequential data, and build real-world interactive music systems which allow a broader audience to harness the power of resultant models."
+    />
+    <meta property="og:image" content="static/img/social.png" />
     <meta property="profile:first_name" content="Chris" />
     <meta property="profile:last_name" content="Donahue" />
     <meta name="twitter:card" content="summary" />
@@ -36,143 +49,392 @@
     </script>
 
     <!-- Libraries -->
-    <!--
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@1.16.2/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!--
     <link
       rel="stylesheet"
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
     />
-    -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Custom -->
+    <link href="style.css" rel="stylesheet" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div id="nav">
-      <div id="nav-logo"></div>
-      <div id="nav-name">
-        <p>
-          Chris Donahue
-        </p>
-      </div>
-      <div id="nav-links">
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#pubs">Publications</a>
-        <a>E-mail me</a>
-      </div>
-    </div>
+    <nav
+      class="navbar navbar-expand-md fixed-top navbar-light bg-light shadow-sm"
+      id="nav"
+    >
+      <div class="container px-0" id="nav-content">
+        <a class="navbar-brand bold py-0 mr-4" href="#">
+          <img
+            id="nav-mug-small"
+            class="rounded-circle p-0 mr-1"
+            width="0"
+            max-width="40"
+            src="https://cdn.glitch.me/3afe174d-89a5-4ceb-8eb8-b6236c305604%2FPXL_20210802_130607958_5.jpg?v=1638986847740"
+          />
+          <span>Chris Donahue</span>
+        </a>
 
-    <div id="about">
-      <div id="mug">
-        <img
-          src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAAAAADRE4smAAAAK3RFWHRDcmVhdGlvbiBUaW1lAFdlZCA4IERlYyAyMDIxIDE5OjI5OjM4IC0wNTAwYAsgawAAAAd0SU1FB+UMCQAeFPw+abgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAEZ0FNQQAAsY8L/GEFAAAAAnRSTlMAvy1NYyUAAAEVSURBVHja7cExAQAAAMKg9U/taQmgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgBgI8AAHJlaBVAAAAAElFTkSuQmCC"
-        />
-      </div>
-      <div id="bio">
-        <p>
-          I am currently a postdoc in the Stanford computer science department
-          working with
-          <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>.
-          Previously, I obtained my PhD from UCSD where I was jointly advised by
-          <a href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a> (CS)
-          and <a href="http://msp.ucsd.edu/">Miller Puckette</a> (music).
-        </p>
-        <p>
-          My research goal is to
-          <span
-            >build music technology that enables a broader set of users to
-            engage with music on a deeper level</span
-          >. To this end, I improve machine learning methods for generative
-          modeling of music, audio, and other sequential data, and build
-          real-world interactive music systems which allow a broader audience to
-          harness the power of resultant models.
-        </p>
-        <p></p>
-        <p>
-          <span>I am currently on the academic and industry job markets!</span>
-          My <a href="static/research.pdf">research statement is here</a>. Feel
-          free to reach out if you think I would be a good fit!
-        </p>
-      </div>
-    </div>
-
-    <div id="news">
-      <ul id="news-list">
-        <li class="news-item">
-          <span class="news-date">91 Dec</span>
-          <p class="news-description">
-            The world rejoiced for I was born today in a hospital in a New
-            England suburb.
-          </p>
-        </li>
-      </ul>
-    </div>
-
-    <div id="pubs">
-      <div>
-        <p>
-          For a complete list, see my
-          <a href="https://scholar.google.com/citations?user=MgzHAPQAAAAJ"
-            >Google Scholar</a
-          >
-          profile.
-        </p>
-      </div>
-      <ul id="pubs-list">
-        <li class="pubs-item">
-          <div class="pubs-img">
-            <img />
-          </div>
-          <p class="pubs-tldr">
-            We demonstrate that making an academic website is helpful for
-            increasing academic clout.
-          </p>
-          <p class="pubs-title">
-            <a class="pubs-link" href=""
-              >Making an academic page: a low-effort strategy for playing the
-              game</a
+        <ul class="navbar-nav ml-auto mr-3">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link btn btn-primary px-2"
+              href="#"
+              id="nav-contact"
+              role="button"
+              data-toggle="dropdown"
+              style="color:#ffffff;"
             >
-          </p>
-          <p class="pubs-author">Chris Donahue</p>
-          <p class="pubs-venue"></p>
-          <ul class="pubs-more">
-            <li>
-              <a href="">pdf</a>
+              Show email
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right"
+              style="width:325px;"
+              id="nav-contact-dropdown"
+            >
+              <form class="px-3 py-2">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nav-email"
+                    value="JavaScript required"
+                  />
+                  <span class="input-group-btn">
+                    <button
+                      class="btn btn-secondary"
+                      id="nav-email-copy"
+                      type="button"
+                      data-toggle="dropdown"
+                      title="Copy to Clipboard"
+                    >
+                      Copy
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </li>
+        </ul>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#nav-collapse"
+          aria-controls="nav-collapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pubs">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="static/cv.pdf">CV</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://scholar.google.com/citations?user=MgzHAPQAAAAJ"
+                >Google Scholar</a
+              >
             </li>
           </ul>
-          <span>21 Dec</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" id="content">
+      <div class="row content-section" id="about">
+        <div class="col-12 col-md-4" id="mug">
+          <img
+            id="mug-img"
+            class="img-fluid rounded-circle mx-auto d-block"
+            src="https://cdn.glitch.me/3afe174d-89a5-4ceb-8eb8-b6236c305604%2FPXL_20210802_130607958_5.jpg?v=1638986847740"
+          />
+          <!--           src="data:image/png;base64,
+          iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAAAAADRE4smAAAAK3RFWHRDcmVhdGlvbiBUaW1lAFdlZCA4IERlYyAyMDIxIDE5OjI5OjM4IC0wNTAwYAsgawAAAAd0SU1FB+UMCQAeFPw+abgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAEZ0FNQQAAsY8L/GEFAAAAAnRSTlMAvy1NYyUAAAEVSURBVHja7cExAQAAAMKg9U/taQmgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgBgI8AAHJlaBVAAAAAElFTkSuQmCC" -->
+          <h2 class="bold text-center" id="mug-name">
+            Chris Donahue
+          </h2>
+          <h2 class="text-center" id="mug-role">
+            Postdoc, Stanford CS
+          </h2>
+          <ul class="text-center p-0" id="mug-social">
+            <li class="mug-social-item">
+              <a
+                class="mug-social-link"
+                href="https://scholar.google.com/citations?user=MgzHAPQAAAAJ"
+              >
+                <img
+                  width="40"
+                  src="https://chrisdonahue.com/img/logos/gscholar.png"
+                />
+              </a>
+            </li>
+            <li class="mug-social-item">
+              <a
+                class="mug-social-link"
+                href="https://twitter.com/chrisdonahuey"
+              >
+                <img
+                  width="40"
+                  src="https://chrisdonahue.com/img/logos/twitter.png"
+                />
+              </a>
+            </li>
+            <li class="mug-social-item">
+              <a class="mug-social-link" href="https://github.com/chrisdonahue">
+                <img
+                  width="40"
+                  src="https://chrisdonahue.com/img/logos/github.png"
+                />
+              </a>
+            </li>
+            <li class="mug-social-item">
+              <a
+                class="mug-social-link"
+                href="https://www.linkedin.com/in/chris-donahue"
+              >
+                <img
+                  width="40"
+                  src="https://chrisdonahue.com/img/logos/linkedin.png"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-8" id="bio">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            vestibulum orci massa, sed sollicitudin nunc rhoncus vel. Aliquam
-            eget mollis leo, varius fermentum neque.
+            <span class="bold"
+              >I am currently on the academic and industry job markets</span
+            >&#8212;see my <a href="static/research.pdf">research statement</a>.
+            Please
+            <button class="btn btn-primary p-1" id="bio-reach-out">
+              reach out
+            </button>
+            if I might be a good fit for your department or company!
           </p>
-        </li>
-      </ul>
-      <div>
-        <p>
-          * indicates equal contribution.
-        </p>
+          <p>
+            I am a postdoc in the Stanford Computer Science Department working
+            with
+            <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>.
+            Previously, I obtained my PhD from UCSD where I was jointly advised
+            by
+            <a href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a> (CS)
+            and <a href="http://msp.ucsd.edu/">Miller Puckette</a> (music).
+          </p>
+          <p>
+            My research goal is to
+            <span class="emph"
+              >build music technology that enables a broader set of users to
+              engage with music on a deeper level</span
+            >. To this end, I improve machine learning methods for generative
+            modeling of music, audio, and other sequential data, and build
+            real-world interactive music systems which allow a broader audience
+            to harness the power of resultant models.
+          </p>
+          <p>
+            Concretely, my work has been used to
+            <a href="https://www.youtube.com/watch?v=HGWkQP9lVPw"
+              >blur the lines between audience and performers</a
+            >
+            in a professional rock concert.
+            <button class="btn btn-secondary p-1" id="piano-genie-init">
+              <span id="piano-genie-init-msg">Click here</span>
+              <span id="piano-genie-init-spinner"></span>
+            </button>
+            to play with
+            <a href="https://magenta.tensorflow.org/pianogenie">Piano Genie</a>,
+            the model behind this experience, right in your browser. I also
+            built a live service called
+            <a href="https://beatsage.com/">Beat Sage</a> which allows thousands
+            of users per day to transform music into rich interactive content.
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-section" id="piano-genie" style="display: none;">
+        <!--
+        <div class="col-12" id="piano-genie-init" style="display: block;">
+          <button
+            class="btn btn-secondary mx-auto d-block"
+            id="start-piano-genie"
+          >
+            Click here to play the piano with AI!
+          </button>
+        </div>
+        -->
+        <div class="col-12" id="piano-genie-ui">
+          <div id="piano-genie-piano-canvas">
+            <canvas height="40px"></canvas>
+          </div>
+          <div class="text-center p-3" id="piano-genie-instructions">
+            <span
+              id="piano-genie-instructions-desktop"
+              style="display: inline;"
+            >
+              Use the 👇 buttons (or your computer's keyboard) to play the 👆
+              piano!</span
+            >
+            <span id="piano-genie-instructions-mobile" style="display: none;">
+              Touch 👇 🌈 to play 👆 🎹!</span
+            >
+            &nbsp;
+            <button class="btn btn-info" id="piano-genie-demo">
+              Demo
+            </button>
+          </div>
+          <div id="piano-genie-buttons">
+            <button class="piano-genie-button" id="piano-genie-button-0">
+              1
+            </button>
+            <button class="piano-genie-button" id="piano-genie-button-1">
+              2
+            </button>
+            <button class="piano-genie-button" id="piano-genie-button-2">
+              3
+            </button>
+            <button class="piano-genie-button" id="piano-genie-button-3">
+              4
+            </button>
+            <button class="piano-genie-button" id="piano-genie-button-4">
+              5
+            </button>
+            <button class="piano-genie-button" id="piano-genie-button-5">
+              6
+            </button>
+            <button class="piano-genie-button" id="piano-genie-button-6">
+              7
+            </button>
+            <button class="piano-genie-button" id="piano-genie-button-7">
+              8
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row content-section" id="news">
+        <div class="col-12 col-md-4 text-center">
+          <h2 class="content-section-label">
+            News
+          </h2>
+        </div>
+        <div class="col-12 col-md-8">
+          <table class="table table-striped mx-auto">
+            <tbody id="news-list">
+              <tr class="news-item">
+                <td class="news-date p-1 pr-3">Dec 91</td>
+                <td class="news-desc p-1">
+                  The world rejoiced for I was born today in a hospital in a New
+                  England suburb.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row content-section" id="pubs">
+        <div class="col-12 col-md-4 text-center">
+          <h2 class="content-section-label">Selected Publications</h2>
+          <p>
+            For a complete list, see my
+            <a href="https://scholar.google.com/citations?user=MgzHAPQAAAAJ"
+              >Google Scholar</a
+            >
+            profile.
+          </p>
+          <p>
+            * indicates equal contribution.
+          </p>
+        </div>
+        <div class="col-12 col-md-8">
+          <ul id="pubs-list">
+            <li class="pubs-item">
+              <div class="pubs-img">
+                <img />
+              </div>
+              <p>
+                <a class="pubs-link" href=""
+                  >Making an academic page: a low-effort strategy for playing
+                  the game</a
+                >
+              </p>
+              <p class="pubs-author">Chris Donahue</p>
+
+              <p>
+                In
+                <span class="pubs-venue">International Web Conference</span>
+              </p>
+              <p class="pubs-tldr">
+                We demonstrate that making an academic website is helpful for
+                increasing academic clout.
+              </p>
+              <ul class="pubs-more">
+                <li>
+                  <a href="">PDF</a>
+                </li>
+                <li>
+                  <a href="">Sound</a>
+                </li>
+                <li>
+                  <a href="">Demo</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row content-section" id="media">
+        <div class="col-12 col-md-4 text-center">
+          <h2 class="content-section-label">Media</h2>
+        </div>
+        <div class="col-12 col-md-8">
+          <ul id="media-list">
+            <li class="media-item">
+              <p class="media-venue">
+                New York Times
+              </p>
+              <a class="media-title" href="">
+                Local postdoctoral scholar files for bankruptcy.
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div id="media">
-      <ul id="media-list">
-        <li class="media-item"></li>
-      </ul>
+    <div id="alert">
+      <template id="alert-template">
+        <div class="alert">
+          <button type="button" class="close" data-dismiss="alert">
+            &times;
+          </button>
+          <span></span>
+        </div>
+      </template>
     </div>
-
-    <div></div>
   </body>
 </html>
