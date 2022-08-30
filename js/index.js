@@ -2,8 +2,9 @@
   var config = {
     debug: true,
     email: {
-      permuted: 'cudtf.ohe.@dronasseanduc',
-      permutation: [9, 23, 19, 13, 16, 20, 2, 5, 7, 11, 8, 22, 18, 17, 3, 14, 12, 10, 21, 4, 15, 1, 6, 0]
+      // https://colab.research.google.com/drive/1VqplzbC8JBBUyrAdYlBAQ4TBiBfKwbGt?usp=sharing
+      permuted: 'oincale.ohmuesmhrrothagc@dpi',
+      permutation: [6, 22, 13, 0, 14, 23, 17, 24, 26, 8, 20, 16, 9, 4, 27, 15, 2, 10, 12, 5, 1, 21, 19, 25, 18, 11, 7, 3]
     },
     stringAudio: {
       blockSize: 1024,
