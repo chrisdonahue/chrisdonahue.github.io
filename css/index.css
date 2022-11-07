@@ -7,7 +7,7 @@
 }
 
 html {
-  background-color: #444A60;
+  background-color: #dddddd;
 }
 
 body {
@@ -48,7 +48,7 @@ a.quiet {
 /* content */
 
 div#content {
-  background-color: #E3E5ED;
+  background-color: #efefef;
   border-radius: 0px;
   padding: 10px;
 }
@@ -130,9 +130,11 @@ div#string-sep {
 /* intro */
 
 section#intro img {
-  width: 10em;
+  width: 12em;
   height: auto;
   margin-right: 50px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 section#intro {
