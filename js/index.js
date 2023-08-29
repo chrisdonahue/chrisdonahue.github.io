@@ -3,8 +3,8 @@
     debug: true,
     email: {
       // https://colab.research.google.com/drive/1VqplzbC8JBBUyrAdYlBAQ4TBiBfKwbGt?usp=sharing
-      permuted: 'oincale.ohmuesmhrrothagc@dpi',
-      permutation: [6, 22, 13, 0, 14, 23, 17, 24, 26, 8, 20, 16, 9, 4, 27, 15, 2, 10, 12, 5, 1, 21, 19, 25, 18, 11, 7, 3]
+      permuted: 'nmhadd.euccsuihouer@',
+      permutation: [7, 14, 9, 8, 18, 5, 16, 11, 10, 13, 0, 4, 19, 3, 1, 6, 15, 17, 2, 12]
     },
     stringAudio: {
       blockSize: 1024,
