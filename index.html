@@ -1,346 +1,499 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="google-site-verification" content="HYli2U-TRYNKZ7rUcYqz91dmS8VHz6TSVYhEurGNkH4" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="google-site-verification" content="HYli2U-TRYNKZ7rUcYqz91dmS8VHz6TSVYhEurGNkH4" />
 
-    <title>Chris Donahue</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
-  </head>
+  <title>Chris Donahue</title>
+  <link rel="stylesheet" href="css/index.css" type="text/css">
 
-  <body>
-    <div id="amod">
-      <img src="img/amod.png"/>
-    </div>
-    <div id="nostring-sep"></div>
-    <div id="string-sep" style="display: none;">
-      <canvas id="string-canvas"></canvas>
-    </div>
+</head>
 
-    <div id="content">
-      <div id="above-sep">
-        <h1 id="chris">Chris Donahue</h1>
-        <ul id="links">
-          <li><a href="https://scholar.google.com/citations?user=MgzHAPQAAAAJ&hl=en">
-              <img src="img/logos/gscholar.png" onmouseover="this.src='img/logos/gscholar_hover.png'"
-onmouseout="this.src='img/logos/gscholar.png'"/>
+<body>
+  <div id="amod">
+    <img src="img/amod.png" />
+  </div>
+  <div id="nostring-sep"></div>
+  <div id="string-sep" style="display: none;">
+    <canvas id="string-canvas"></canvas>
+  </div>
+
+  <div id="content">
+    <div id="above-sep">
+      <h1 id="chris">Chris Donahue</h1>
+      <ul id="links">
+        <li><a href="https://scholar.google.com/citations?user=MgzHAPQAAAAJ&hl=en">
+            <img src="img/logos/gscholar.png" onmouseover="this.src='img/logos/gscholar_hover.png'"
+              onmouseout="this.src='img/logos/gscholar.png'" />
           </a></li>
-          <li><a href="https://twitter.com/chrisdonahuey">
-              <img src="img/logos/twitter.png" onmouseover="this.src='img/logos/twitter_hover.png'"
-onmouseout="this.src='img/logos/twitter.png'"/>
+        <li><a href="https://twitter.com/chrisdonahuey">
+            <img src="img/logos/twitter.png" onmouseover="this.src='img/logos/twitter_hover.png'"
+              onmouseout="this.src='img/logos/twitter.png'" />
           </a></li>
-          <li><a href="https://github.com/chrisdonahue">
+        <li><a href="https://github.com/chrisdonahue">
             <img src="img/logos/github.png" onmouseover="this.src='img/logos/github_hover.png'"
-onmouseout="this.src='img/logos/github.png'"/>
+              onmouseout="this.src='img/logos/github.png'" />
           </a></li>
-          <li><a href="https://www.linkedin.com/in/chris-donahue">
-              <img src="img/logos/linkedin.png" onmouseover="this.src='img/logos/linkedin_hover.png'"
-onmouseout="this.src='img/logos/linkedin.png'"/>
+        <li><a href="https://www.linkedin.com/in/chris-donahue">
+            <img src="img/logos/linkedin.png" onmouseover="this.src='img/logos/linkedin_hover.png'"
+              onmouseout="this.src='img/logos/linkedin.png'" />
           </a></li>
-        </ul>
-        <p id="email-block">
-          <b>Email: </b>
-          <span id="email">
-            <noscript><i>Enable Javascript to view e-mail address</i></noscript>
-          </span>
-        </p>
-      </div>
-      <div id="sep-placeholder" style="visibility: hidden;">
-        <hr>
-      </div>
-      <div id="below-sep">
-        <section id="intro">
-          <img src="img/headshot_22.png" align="left"/></div>
-	  <p>I am an assistant professor in the Computer Science Department at Carnegie Mellon University. I am also a part-time research scientist at <a target="_blank" href="https://magenta.tensorflow.org/">Google Magenta</a>.</p>
-	  <p>My research goal is to <i>build music technology that enables a broader set of users to engage with music on a deeper level</i>. To this end, I improve ML methods for generative modeling of music and other multimedia, and build interactive systems which allow anyone to leverage resultant models.</p>
-          <p>Previously, I was a postdoc at Stanford CS advised by <a target="_blank" href="https://cs.stanford.edu/~pliang/">Percy Liang</a>. Before that, I completed a PhD at UCSD under <a target="_blank" href="http://msp.ucsd.edu/">Miller Puckette</a> and <a target="_blank" href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>.</p>
-        </section>
-        <section id="publications">
-	<h2>Selected Publications (<a href="https://scholar.google.com/citations?user=MgzHAPQAAAAJ&hl=en">Full List</a>)</h2>
-          <ul>
-            <li>
-              <span class="paper-authors">
-		      Chris Donahue, <a class="quiet" href="https://johnthickstun.com/">John Thickstun</a>, <a class="quiet" href="https://cs.stanford.edu/~pliang/">Percy Liang</a>
-              </span>
-              <span class="paper-title">
-	      Melody Transcription via Generative Pre-training
-              </span>
-              <span class="paper-venue">
-		      In <i>ISMIR</i>, 2022.
-              </span>
-              <span class="paper-hyperlinks">
-		      [<a href="https://arxiv.org/pdf/2212.01884.pdf">pdf</a>, <a href="https://arxiv.org/abs/2212.01884">arXiv</a>, <a href="https://chrisdonahue.com/sheetsage">sound examples</a>, <a href="https://github.com/chrisdonahue/sheetsage">code and data</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-		      <a class="quiet" href="https://krandiash.github.io/">Karan Goel</a>, <a class="quiet" href="https://stanford.edu/~albertgu/">Albert Gu</a>, Chris Donahue, <a class="quiet" href="https://cs.stanford.edu/~chrismre/">Christopher Ré</a> 
-              </span>
-              <span class="paper-title">
-	      It's Raw! Audio Generation with State-Space Models
-              </span>
-              <span class="paper-venue">
-		      <!-- Top 118 of 5630 submissions were long talks -->
-		      In <i>ICML</i> (<b>Long Talk</b>; Top 2%), 2022.
-              </span>
-              <span class="paper-hyperlinks">
-		      [<a href="https://arxiv.org/pdf/2202.09729.pdf">pdf</a>, <a href="https://arxiv.org/abs/2202.09729">arXiv</a>, <a href="https://hazyresearch.stanford.edu/sashimi-examples/">sound examples</a>, <a href="https://github.com/HazyResearch/state-spaces">code</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-		      <a class="quiet" href="https://cs.stanford.edu/~rjcaste/">Rodrigo Castellon*</a>, Chris Donahue*, <a class="quiet" href="https://cs.stanford.edu/~pliang/">Percy Liang</a>
-              </span>
-              <span class="paper-title">
-              Codified Audio Language Modeling Learns Useful Representations for Music Information Retrieval
-              </span>
-              <span class="paper-venue">
-		      <!-- Top 3 papers were presented as best paper nominees -->
-	      In <i>ISMIR</i> (<b>Best Paper Runner-up</b>), 2021.
-              </span>
-              <span class="paper-hyperlinks">
-              [<a href="https://arxiv.org/pdf/2107.05677.pdf">pdf</a>, <a href="https://arxiv.org/abs/2107.05677">arXiv</a>, <a href="https://github.com/p-lambda/jukemir">code</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-		      <a class="quiet" href="https://salu133445.github.io/">Hao-Wen Dong</a>, Chris Donahue, <a class="quiet" href="https://cseweb.ucsd.edu/~tberg/">Taylor Berg-Kirkpatrick</a>, <a class="quiet" href="https://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>
-              </span>
-              <span class="paper-title">
-              Towards Automatic Instrumentation by Learning to Separate Parts in Symbolic Multitrack Music
-              </span>
-              <span class="paper-venue">
-	      In <i>ISMIR</i>, 2021.
-              </span>
-              <span class="paper-hyperlinks">
-		      [<a href="https://arxiv.org/pdf/2107.05916.pdf">pdf</a>, <a href="https://arxiv.org/abs/2107.05916">arXiv</a>, <a href="https://salu133445.github.io/arranger/demo">sound examples</a>, <a href="https://github.com/salu133445/arranger">code</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-		      <a class="quiet" href="https://minalee.info/">Mina Lee*</a>, Chris Donahue*, <a class="quiet" href="https://robinjia.github.io/">Robin Jia</a>, <a class="quiet" href="https://www.linkedin.com/in/alexanderiyabor">Alexander Iyabor</a>, <a class="quiet" href="https://cs.stanford.edu/~pliang/">Percy Liang</a>
-              </span>
-              <span class="paper-title">
-              Swords: A Benchmark for Lexical Substitution with Improved Data Coverage and Quality
-              </span>
-              <span class="paper-venue">
-	      In <i>NAACL</i>, 2021.
-              </span>
-              <span class="paper-hyperlinks">
-              [<a href="https://arxiv.org/pdf/2106.04102.pdf">pdf</a>, <a href="https://arxiv.org/abs/2106.04102">arXiv</a>, <a href="https://github.com/p-lambda/swords">code</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-		      Chris Donahue, <a class="quiet" href="https://minalee.info/">Mina Lee</a>, <a class="quiet" href="https://cs.stanford.edu/~pliang/">Percy Liang</a>
-              </span>
-              <span class="paper-title">
-              Enabling Language Models to Fill in the Blanks
-              </span>
-              <span class="paper-venue">
-	      In <i>ACL</i>, 2020.
-              </span>
-              <span class="paper-hyperlinks">
-              [<a href="https://arxiv.org/pdf/2005.05339.pdf">pdf</a>, <a href="https://arxiv.org/abs/2005.05339">arXiv</a>, <a href="https://chrisdonahue.com/ilm/">demo</a>, <a href="https://github.com/chrisdonahue/ilm">code</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-		      Chris Donahue, <a class="quiet" href="https://henry.calclavia.com">Huanru Henry Mao</a>, Yiting Ethan Li, <a class="quiet" href="https://cseweb.ucsd.edu/~gary/">Garrison W. Cottrell</a>, <a class="quiet" href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>
-              </span>
-              <span class="paper-title">
-              LakhNES: Improving Multi-instrumental Music Generation with Cross-domain Pre-training
-              </span>
-              <span class="paper-venue">
-	      In <i>ISMIR</i>, 2019.
-              </span>
-              <span class="paper-hyperlinks">
-              [<a href="https://arxiv.org/pdf/1907.04868.pdf">pdf</a>, <a href="https://arxiv.org/abs/1907.04868">arXiv</a>, <a href="https://github.com/chrisdonahue/LakhNES">code</a>, <a href="LakhNES/">music examples</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-                <a class="quiet" href="https://paarthneekhara.github.io/">Paarth Neekhara*</a>, Chris Donahue*, <a class="quiet" href="http://msp.ucsd.edu">Miller Puckette</a>, <a class="quiet" href="http://dub.ucsd.edu/">Shlomo Dubnov</a>, <a class="quiet" href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>
-              </span>
-              <span class="paper-title">
-              Expediting TTS Synthesis with Adversarial Vocoding
-              </span>
-              <span class="paper-venue">
-	      In <i>INTERSPEECH</i> (<b>Oral</b>), 2019.
-              </span>
-              <span class="paper-hyperlinks">
-              [<a href="https://arxiv.org/pdf/1904.07944.pdf">pdf</a>, <a href="https://arxiv.org/abs/1904.07944">arXiv</a>, <a href="https://github.com/paarthneekhara/advoc">code</a>, <a href="advoc_examples/">sound examples</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-                Chris Donahue, <a class="quiet" href="http://www.iansimon.org">Ian Simon</a>, <a class="quiet" href="http://benanne.github.io/about/">Sander Dieleman</a>
-              </span>
-              <span class="paper-title">
-              Piano Genie
-              </span>
-              <span class="paper-venue">
-              In <i>ACM IUI</i>, 2019.
-              </span>
-              <span class="paper-hyperlinks">
-              [<a href="https://arxiv.org/pdf/1810.05246.pdf">pdf</a>, <a href="https://arxiv.org/abs/1810.05246">arXiv</a>, <a href="https://magenta.tensorflow.org/pianogenie">blog post</a>, <a href="https://www.youtube.com/watch?v=YRb0XAnUpIk&list=PLBUMAYA6kvGVOmhAwLRP4i_L15D7AoWDJ">videos</a>, <a href="https://chrisdonahue.com/piano-genie">demo</a>, <a href="https://github.com/tensorflow/magenta/tree/master/magenta/models/piano_genie">code</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-                Chris Donahue, <a class="quiet" href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>, <a class="quiet" href="http://msp.ucsd.edu">Miller Puckette</a>
-              </span>
-              <span class="paper-title">
-              Adversarial Audio Synthesis
-              </span>
-              <span class="paper-venue">
-              In <i>ICLR</i>, 2019.
-              </span>
-              <span class="paper-hyperlinks">
-	      [<a href="https://arxiv.org/pdf/1802.04208.pdf">pdf</a>, <a href="https://arxiv.org/abs/1802.04208">arXiv</a>, <a href="https://github.com/chrisdonahue/wavegan">code</a>, <a href="wavegan/">demo</a>, <a href="http://wavegan-v1.s3-website-us-east-1.amazonaws.com">sound examples</a>, <a href="https://colab.research.google.com/drive/1e9o2NB2GDDjadptGr3rwQwTcw-IrFOnm">notebook</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-                Jesse Engel, Kumar Krishna Agrawal, Shuo Chen, Ishaan Gulrajani, Chris Donahue, Adam Roberts
-              </span>
-              <span class="paper-title">
-              GANSynth: Adversarial Neural Audio Synthesis
-              </span>
-              <span class="paper-venue">
-              In <i>ICLR</i>, 2019.
-              </span>
-              <span class="paper-hyperlinks">
-              [<a href="https://openreview.net/pdf?id=H1xQVn09FX">pdf</a>, <a href="https://magenta.tensorflow.org/gansynth">blog post</a>, <a href="https://github.com/tensorflow/magenta/tree/master/magenta/models/gansynth">code</a>, <a href="https://storage.googleapis.com/magentadata/papers/gansynth/index.html">sound examples</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-                Chris Donahue, <a class="quiet" href="https://henry.calclavia.com">Huanru Henry Mao</a>, <a class="quiet" href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>
-              </span>
-              <span class="paper-title">
-              The NES Music Database: A Multi-instrumental Dataset with Expressive Performance Attributes
-              </span>
-              <span class="paper-venue">
-              In <i>ISMIR</i>, 2018.
-              </span>
-              <span class="paper-hyperlinks">
-              [<a href="https://arxiv.org/pdf/1806.04278.pdf">pdf</a>, <a href="https://arxiv.org/abs/1806.04278">arXiv</a>, <a href="https://github.com/chrisdonahue/nesmdb">dataset</a>, <a href="https://github.com/chrisdonahue/nesmdb">code</a>, <a href="https://colab.research.google.com/drive/1oN1g4-quvs-2GIDAff8pVOaCh_Dg-cWe">notebook</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-                Chris Donahue, <a class="quiet" href="http://zacklipton.com/">Zachary C. Lipton</a>, <a class="quiet" href="http://web.stanford.edu/~abalsubr/">Akshay Balsubramani</a>, <a class="quiet" href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>
-              </span>
-              <span class="paper-title">
-              Semantically Decomposing the Latent Spaces of Generative Adversarial Networks
-              </span>
-              <span class="paper-venue">
-	      In <i>ICLR</i>, 2018.
-              </span>
-              <span class="paper-hyperlinks">
-                [<a href="https://arxiv.org/pdf/1705.07904.pdf">pdf</a>, <a href="https://arxiv.org/abs/1705.07904">arXiv</a>, <a href="https://github.com/chrisdonahue/sdgan">code</a>, <a href="sdgan/">demo</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-                Chris Donahue, <a class="quiet" href="https://research.google.com/pubs/BoLi.html">Bo Li</a>, <a class="quiet" href="https://research.google.com/pubs/RohitPrabhavalkar.html">Rohit Prabhavalkar</a>
-              </span>
-              <span class="paper-title">
-              Exploring Speech Enhancement with Generative Adversarial Networks for Robust Speech Recognition
-              </span>
-              <span class="paper-venue">
-                In <i>ICASSP</i> (<b>Oral</b>), 2018.
-              </span>
-              <span class="paper-hyperlinks">
-                [<a href="https://arxiv.org/pdf/1711.05747.pdf">pdf</a>, <a href="https://arxiv.org/abs/1711.05747">arXiv</a>]
-              </span>
-            </li>
-            <li>
-              <span class="paper-authors">
-                Chris Donahue, <a class="quiet" href="http://zacklipton.com">Zachary C. Lipton</a>, <a class="quiet" href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>
-              </span>
-              <span class="paper-title">
-  	      Dance Dance Convolution
-              </span>
-              <span class="paper-venue">
-                In <i>ICML</i>, 2017.
-              </span>
-              <span class="paper-hyperlinks">
-                [<a href="https://arxiv.org/pdf/1703.06891.pdf">pdf</a>, <a href="https://arxiv.org/abs/1703.06891">arXiv</a>, <a href="https://github.com/chrisdonahue/ddc">dataset</a>, <a href="https://github.com/chrisdonahue/ddc">code</a>, <a href="httpis://chrisdonahue.com/ddc">demo</a>]
-              </span>
-            </li>
-	    <span>
-	      * Indicates equal contribution
-	    </span>
-          </ul>
-        </section>
-        <section id="work">
-          <h2>Work Experience</h2>
-          <ul>
-          <li><i>(2022-Current)</i> Research Scientist at <a class="quiet" href="https://magenta.tensorflow.org">Google Magenta</a>.</li>
-          <li><i>(Summer 2018)</i> Internship at <a class="quiet" href="https://magenta.tensorflow.org">Google Magenta</a> (Music generation w/ <a href="http://www.iansimon.org">Ian Simon</a> and <a href="http://benanne.github.io/about/">Sander Dieleman</a>)</li>
-          <li><i>(Summer 2017)</i> Internship at <a class="quiet" href="https://www.google.com/">Google</a> (Speech recognition w/ <a href="https://research.google.com/pubs/BoLi.html">Bo Li</a> and <a href="https://research.google.com/pubs/RohitPrabhavalkar.html">Rohit Prabhavalkar</a>)</li>
-  	  <li><i>(Summer 2016)</i> Internship at <a class="quiet" href="https://www.google.com/">Google Search</a></li>
-  	  <li><i>(Summer 2015)</i> Internship at <a class="quiet" href="https://play.google.com/music">Google Play Music</a> (MIR w/ <a href="http://www-etud.iro.umontreal.ca/~boulanni/">Nicolas Boulanger-Lewandowski</a>)</li>
-  	  <li><i>(2011-2014)</i> Mentor for <a class="quiet" href="https://cns.utexas.edu/fri">UT Freshman Research Initiative</a> w/ <a href="http://joellehman.com/">Joel Lehman</a> and <a href="https://www.cs.utexas.edu/~risto/">Risto Miikkulainen</a></li>
-	  <li><i>(Summers 2011-2014)</i> Internships at <a class="quiet" href="https://wwwext.arlut.utexas.edu/sgl.html">UT Applied Research Laboratories</a>, <a class="quiet" href="https://www.qualcomm.com/">Qualcomm</a>, and two startups</li>
-          </ul>
-        </section>
-        <section id="media">
-          <h2>Media Coverage</h2>
-          <ul>
-	  <li><a href="https://uploadvr.com/beat-sage-update-v2/"><i>UploadVR</i></a> Beat Sage Update Adds 90 Degree Levels, Walls And Single Saber Mode</li>
-	  <li><a href="https://uploadvr.com/beat-sage-ai-custom-beat-saber/"><i>UploadVR</i></a> Get Rhythm: How Beat Sage Uses AI To Create Beat Saber Maps</li>
-          <li><a href="https://www.roadtovr.com/beat-saber-project-uses-ai-generate-custom-beat-maps-song/"><i>Road to VR</i></a> This 'Beat Saber' Project Uses AI to Generate Custom Beat Maps for Any Song</li>
-	  <!--<li><a href="https://uploadvr.com/beat-sage-mp3-support/"><i>UploadVR</i></a> Beat Sage Adds MP3 Upload Support For AI Generated Beat Saber Maps</li>-->
-          <li><a href="https://uploadvr.com/beat-sage-ai-beat-saber-custom/"><i>UploadVR</i></a> New AI Tool Turns Any Song Into A Custom Beat Saber Map, And It Really Works</li>
-          <hr>
-	  <li><a href="https://www.stereogum.com/2043070/watch-the-flaming-lips-play-a-bowl-of-fruit-at-google-io/video/"><i>Stereogum</i></a> Watch The Flaming Lips Play A Bowl Of Fruit At Google I/O</li>
-          <hr>
-          <li><a href="https://www.businessinsider.com/google-researchers-built-piano-genie-ai-tool-2018-10"><i>Business Insider</i></a> A Google intern helped build an AI tool inspired by 'Guitar Hero' to let rookies play piano</li>
-          <li><a href="https://www.theverge.com/2018/10/16/17982596/google-magenta-ai-piano-genie-improvisation-neural-networks"><i>The Verge</i></a> Google’s AI-powered Piano Genie lets anyone improvise perfectly by bashing buttons</li>
-          <li><a href="https://www.standard.co.uk/tech/piano-genie-google-magenta-ai-a3965456.html"><i>Evening Standard</i></a> Piano Genie: Google's AI programme is like Guitar Hero for the piano world</li>
-          <li><a href="https://www.engadget.com/2018/10/16/google-ai-piano-genie-improvise-classical-music/"><i>Engadget</i></a> Google’s Piano Genie lets anyone improvise classical music</li>
-          <hr>
-          <li><a href="https://www.technologyreview.com/s/604000/machine-learning-algorithm-watches-dance-dance-revolution-then-creates-dances-of-its-own/"><i>MIT Tech Review</i></a> Machine-Learning Algorithm Watches DDR, Then Creates Dances of Its Own</li>
-          <li><a href="https://www.theverge.com/2017/3/24/15047328/dance-dance-revolution-ai-neural-network-choreography"><i>The Verge</i></a> Scientists have taught a neural network to choreograph Dance Dance Revolution levels</li>
-          <li><a href="https://www.theregister.co.uk/2017/03/24/ai_enters_dance_dance_revolution/"><i>The Register</i></a> Yet another job menaced by AI! Uh, wait, it says here... Dance Dance Revolution designers</li>
-	  <!--<li><a href="https://theoutline.com/post/1280/this-neural-network-has-learned-how-to-choreograph-for-ddr"><i>The Outline</i></a> This neural network has learned how to choreograph for DDR</li>-->
-          <li><a href="https://noisey.vice.com/en_us/article/jp3bw7/this-machine-learned-to-choreograph-by-watching-dance-dance-revolution"><i>Vice</i></a> This Machine Learned to Choreograph by Watching Dance Dance Revolution</li>
-          </ul>
-        </section>
-        <section id="other">
-          <!-- TODO: ulamidi, PD externals, stringent, liquid_one, STM FM -->
-          <h2>Other</h2>
-          <ul>
-          <li><i>(2020)</i> Released Beat Sage, a web service for automatically creating Beat Saber levels (<a href="https://beatsage.com">link</a>)</li>
-          <li><i>(2020)</i> Download files from Google Drive on the command line (<a href="https://chrisdonahue.com/gdrive-wget/">link</a>, <a href="https://github.com/chrisdonahue/gdrive-wget">code</a>)</li>
-	  <li><i>(2019)</i> PhD dissertation on music, AI, and interaction (<a href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pdf/2019_ucsd_dissertation.pdf">pdf</a>)</li>
-          <li><i>(2018)</i> Transcribe a batch of solo piano recordings to MIDI (<a href="piano-transcribe-batch/">link</a>)</li>
-          <li><i>(2017)</i> PhD qualifying examination (<a href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pdf/2017_ucsd_quals.pdf">pdf</a>)</li>
-	  <li><i>(2016)</i> Master's thesis on convolution-based cross-synthesis, (<a href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pdf/2016_ucsd_eccs.pdf">pdf</a>, <a href="https://github.com/chrisdonahue/ject">code</a>, <a href="http://chrisdonahue.com/ject/">vst</a>)</li>
-	  <li><i>(2015)</i> Prototype for MOOC on computer music fundamentals using Web Audio API (<a href="js_audio_examples/">link</a>)</li>
-          <li><i>(2015)</i> Mobile-friendly, networked musical controller (<a href="spz15/">demo</a>)</li>
-	  <li><i>(2014)</i> Multichannel convolution reverb plugin (<a href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pages/melder/melder.png">screenshot</a>, <a href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pages/melder/melder.zip">code</a>, <a href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pages/melder/melder.dll">windows vst</a>)</li>
-	  <li><i>(2013)</i> Undergraduate thesis on musical instrument mimicry (<a href="http://apps.cs.utexas.edu/tech_reports/reports/tr/TR-2156.pdf">pdf</a>, <a href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pages/evosynth/thesis.html">examples</a>, <a href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/bin/evosynth_v0.2a.zip">vst</a>)</li>
-	  <li><i>(2013)</i> OpenGL 3D spectrogram (<a href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pages/3dspectro/index.html">page</a>, <a href="https://github.com/chrisdonahue/opengl_spectrogram">code</a>)</li>
-          <li><i>(2012-2014)</i> Played keyboard for <a href="https://foodgroup.bandcamp.com/">Food Group</a></li>
-          <li><i></i><a href=""></a></li>
-          </ul>
-        </section>
-	<br>
-        <p><i>Last updated 2023/8/28</i></p>
-      </div>
+      </ul>
+      <p id="email-block">
+        <b>Email: </b>
+        <span id="email">
+          <noscript><i>Enable Javascript to view e-mail address</i></noscript>
+        </span>
+      </p>
     </div>
+    <div id="sep-placeholder" style="visibility: hidden;">
+      <hr>
+    </div>
+    <div id="below-sep">
+      <section id="intro">
+        <img src="img/headshot_22.png" align="left" />
+    </div>
+    <p>I am an assistant professor in the Computer Science Department at Carnegie Mellon University. I am also a
+      part-time research scientist at <a target="_blank" href="https://magenta.tensorflow.org/">Google Magenta</a>.</p>
+    <p>My research goal is to <i>build music technology that enables a broader set of users to engage with music on a
+        deeper level</i>. To this end, I improve ML methods for generative modeling of music and other multimedia, and
+      build interactive systems which allow anyone to leverage resultant models.</p>
+    <p>Previously, I was a postdoc at Stanford CS advised by <a target="_blank"
+        href="https://cs.stanford.edu/~pliang/">Percy Liang</a>. Before that, I completed a PhD at UCSD under <a
+        target="_blank" href="http://msp.ucsd.edu/">Miller Puckette</a> and <a target="_blank"
+        href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>.</p>
+    </section>
+    <section id="publications">
+      <h2>Selected Publications (<a href="https://scholar.google.com/citations?user=MgzHAPQAAAAJ&hl=en">Full List</a>)
+      </h2>
+      <ul>
+        <li>
+          <span class="paper-authors">
+            Chris Donahue*, Antoine Caillon*, Adam Roberts*, Ethan Manilow, Philippe Esling, Andrea Agostinelli, Mauro
+            Verzetti, Ian Simon, Olivier Pietquin, Neil Zeghidour, Jesse Engel
+          </span>
+          <span class="paper-title">
+            SingSong: Generating musical accompaniments from singing
+          </span>
+          <span class="paper-venue">
+            arXiv, 2023.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/2301.12662.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/2301.12662">arXiv</a>, <a
+              href="https://storage.googleapis.com/sing-song/index.html">sound examples</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            <a class="quiet" href="https://johnthickstun.com/">John Thickstun</a>, David Hall, Chris Donahue, <a
+              class="quiet" href="https://cs.stanford.edu/~pliang/">Percy Liang</a>
+          </span>
+          <span class="paper-title">
+            Anticipatory Music Transformer
+          </span>
+          <span class="paper-venue">
+            arXiv, 2023.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/2306.08620.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/2306.08620">arXiv</a>, <a
+              href="https://crfm.stanford.edu/2023/06/16/anticipatory-music-transformer.html">sound
+              examples</a>, <a href="https://github.com/jthickstun/anticipation">code and models</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            Chris Donahue, <a class="quiet" href="https://johnthickstun.com/">John Thickstun</a>, <a class="quiet"
+              href="https://cs.stanford.edu/~pliang/">Percy Liang</a>
+          </span>
+          <span class="paper-title">
+            Melody Transcription via Generative Pre-training
+          </span>
+          <span class="paper-venue">
+            In <i>ISMIR</i>, 2022.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/2212.01884.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/2212.01884">arXiv</a>, <a href="https://chrisdonahue.com/sheetsage">sound
+              examples</a>, <a href="https://github.com/chrisdonahue/sheetsage">code and data</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            <a class="quiet" href="https://krandiash.github.io/">Karan Goel</a>, <a class="quiet"
+              href="https://stanford.edu/~albertgu/">Albert Gu</a>, Chris Donahue, <a class="quiet"
+              href="https://cs.stanford.edu/~chrismre/">Christopher Ré</a>
+          </span>
+          <span class="paper-title">
+            It's Raw! Audio Generation with State-Space Models
+          </span>
+          <span class="paper-venue">
+            <!-- Top 118 of 5630 submissions were long talks -->
+            In <i>ICML</i> (<b>Long Talk</b>; Top 2%), 2022.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/2202.09729.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/2202.09729">arXiv</a>, <a
+              href="https://hazyresearch.stanford.edu/sashimi-examples/">sound examples</a>, <a
+              href="https://github.com/HazyResearch/state-spaces">code</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            <a class="quiet" href="https://cs.stanford.edu/~rjcaste/">Rodrigo Castellon*</a>, Chris Donahue*, <a
+              class="quiet" href="https://cs.stanford.edu/~pliang/">Percy Liang</a>
+          </span>
+          <span class="paper-title">
+            Codified Audio Language Modeling Learns Useful Representations for Music Information Retrieval
+          </span>
+          <span class="paper-venue">
+            <!-- Top 3 papers were presented as best paper nominees -->
+            In <i>ISMIR</i> (<b>Best Paper Runner-up</b>), 2021.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/2107.05677.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/2107.05677">arXiv</a>, <a href="https://github.com/p-lambda/jukemir">code</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            <a class="quiet" href="https://salu133445.github.io/">Hao-Wen Dong</a>, Chris Donahue, <a class="quiet"
+              href="https://cseweb.ucsd.edu/~tberg/">Taylor Berg-Kirkpatrick</a>, <a class="quiet"
+              href="https://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>
+          </span>
+          <span class="paper-title">
+            Towards Automatic Instrumentation by Learning to Separate Parts in Symbolic Multitrack Music
+          </span>
+          <span class="paper-venue">
+            In <i>ISMIR</i>, 2021.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/2107.05916.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/2107.05916">arXiv</a>, <a
+              href="https://salu133445.github.io/arranger/demo">sound examples</a>, <a
+              href="https://github.com/salu133445/arranger">code</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            <a class="quiet" href="https://minalee.info/">Mina Lee*</a>, Chris Donahue*, <a class="quiet"
+              href="https://robinjia.github.io/">Robin Jia</a>, <a class="quiet"
+              href="https://www.linkedin.com/in/alexanderiyabor">Alexander Iyabor</a>, <a class="quiet"
+              href="https://cs.stanford.edu/~pliang/">Percy Liang</a>
+          </span>
+          <span class="paper-title">
+            Swords: A Benchmark for Lexical Substitution with Improved Data Coverage and Quality
+          </span>
+          <span class="paper-venue">
+            In <i>NAACL</i>, 2021.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/2106.04102.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/2106.04102">arXiv</a>, <a href="https://github.com/p-lambda/swords">code</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            Chris Donahue, <a class="quiet" href="https://minalee.info/">Mina Lee</a>, <a class="quiet"
+              href="https://cs.stanford.edu/~pliang/">Percy Liang</a>
+          </span>
+          <span class="paper-title">
+            Enabling Language Models to Fill in the Blanks
+          </span>
+          <span class="paper-venue">
+            In <i>ACL</i>, 2020.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/2005.05339.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/2005.05339">arXiv</a>, <a href="https://chrisdonahue.com/ilm/">demo</a>, <a
+              href="https://github.com/chrisdonahue/ilm">code</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            Chris Donahue, <a class="quiet" href="https://henry.calclavia.com">Huanru Henry Mao</a>, Yiting Ethan Li, <a
+              class="quiet" href="https://cseweb.ucsd.edu/~gary/">Garrison W. Cottrell</a>, <a class="quiet"
+              href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>
+          </span>
+          <span class="paper-title">
+            LakhNES: Improving Multi-instrumental Music Generation with Cross-domain Pre-training
+          </span>
+          <span class="paper-venue">
+            In <i>ISMIR</i>, 2019.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/1907.04868.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/1907.04868">arXiv</a>, <a
+              href="https://github.com/chrisdonahue/LakhNES">code</a>, <a href="LakhNES/">music examples</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            <a class="quiet" href="https://paarthneekhara.github.io/">Paarth Neekhara*</a>, Chris Donahue*, <a
+              class="quiet" href="http://msp.ucsd.edu">Miller Puckette</a>, <a class="quiet"
+              href="http://dub.ucsd.edu/">Shlomo Dubnov</a>, <a class="quiet"
+              href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>
+          </span>
+          <span class="paper-title">
+            Expediting TTS Synthesis with Adversarial Vocoding
+          </span>
+          <span class="paper-venue">
+            In <i>INTERSPEECH</i> (<b>Oral</b>), 2019.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/1904.07944.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/1904.07944">arXiv</a>, <a
+              href="https://github.com/paarthneekhara/advoc">code</a>, <a href="advoc_examples/">sound examples</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            Chris Donahue, <a class="quiet" href="http://www.iansimon.org">Ian Simon</a>, <a class="quiet"
+              href="http://benanne.github.io/about/">Sander Dieleman</a>
+          </span>
+          <span class="paper-title">
+            Piano Genie
+          </span>
+          <span class="paper-venue">
+            In <i>ACM IUI</i>, 2019.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/1810.05246.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/1810.05246">arXiv</a>, <a
+              href="https://magenta.tensorflow.org/pianogenie">blog post</a>, <a
+              href="https://www.youtube.com/watch?v=YRb0XAnUpIk&list=PLBUMAYA6kvGVOmhAwLRP4i_L15D7AoWDJ">videos</a>, <a
+              href="https://chrisdonahue.com/piano-genie">demo</a>, <a
+              href="https://github.com/tensorflow/magenta/tree/master/magenta/models/piano_genie">code</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            Chris Donahue, <a class="quiet" href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>, <a
+              class="quiet" href="http://msp.ucsd.edu">Miller Puckette</a>
+          </span>
+          <span class="paper-title">
+            Adversarial Audio Synthesis
+          </span>
+          <span class="paper-venue">
+            In <i>ICLR</i>, 2019.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/1802.04208.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/1802.04208">arXiv</a>, <a
+              href="https://github.com/chrisdonahue/wavegan">code</a>, <a href="wavegan/">demo</a>, <a
+              href="http://wavegan-v1.s3-website-us-east-1.amazonaws.com">sound examples</a>, <a
+              href="https://colab.research.google.com/drive/1e9o2NB2GDDjadptGr3rwQwTcw-IrFOnm">notebook</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            Jesse Engel, Kumar Krishna Agrawal, Shuo Chen, Ishaan Gulrajani, Chris Donahue, Adam Roberts
+          </span>
+          <span class="paper-title">
+            GANSynth: Adversarial Neural Audio Synthesis
+          </span>
+          <span class="paper-venue">
+            In <i>ICLR</i>, 2019.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://openreview.net/pdf?id=H1xQVn09FX">pdf</a>, <a
+              href="https://magenta.tensorflow.org/gansynth">blog post</a>, <a
+              href="https://github.com/tensorflow/magenta/tree/master/magenta/models/gansynth">code</a>, <a
+              href="https://storage.googleapis.com/magentadata/papers/gansynth/index.html">sound examples</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            Chris Donahue, <a class="quiet" href="https://henry.calclavia.com">Huanru Henry Mao</a>, <a class="quiet"
+              href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>
+          </span>
+          <span class="paper-title">
+            The NES Music Database: A Multi-instrumental Dataset with Expressive Performance Attributes
+          </span>
+          <span class="paper-venue">
+            In <i>ISMIR</i>, 2018.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/1806.04278.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/1806.04278">arXiv</a>, <a
+              href="https://github.com/chrisdonahue/nesmdb">dataset</a>, <a
+              href="https://github.com/chrisdonahue/nesmdb">code</a>, <a
+              href="https://colab.research.google.com/drive/1oN1g4-quvs-2GIDAff8pVOaCh_Dg-cWe">notebook</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            Chris Donahue, <a class="quiet" href="http://zacklipton.com/">Zachary C. Lipton</a>, <a class="quiet"
+              href="http://web.stanford.edu/~abalsubr/">Akshay Balsubramani</a>, <a class="quiet"
+              href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>
+          </span>
+          <span class="paper-title">
+            Semantically Decomposing the Latent Spaces of Generative Adversarial Networks
+          </span>
+          <span class="paper-venue">
+            In <i>ICLR</i>, 2018.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/1705.07904.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/1705.07904">arXiv</a>, <a
+              href="https://github.com/chrisdonahue/sdgan">code</a>, <a href="sdgan/">demo</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            Chris Donahue, <a class="quiet" href="https://research.google.com/pubs/BoLi.html">Bo Li</a>, <a
+              class="quiet" href="https://research.google.com/pubs/RohitPrabhavalkar.html">Rohit Prabhavalkar</a>
+          </span>
+          <span class="paper-title">
+            Exploring Speech Enhancement with Generative Adversarial Networks for Robust Speech Recognition
+          </span>
+          <span class="paper-venue">
+            In <i>ICASSP</i> (<b>Oral</b>), 2018.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/1711.05747.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/1711.05747">arXiv</a>]
+          </span>
+        </li>
+        <li>
+          <span class="paper-authors">
+            Chris Donahue, <a class="quiet" href="http://zacklipton.com">Zachary C. Lipton</a>, <a class="quiet"
+              href="http://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a>
+          </span>
+          <span class="paper-title">
+            Dance Dance Convolution
+          </span>
+          <span class="paper-venue">
+            In <i>ICML</i>, 2017.
+          </span>
+          <span class="paper-hyperlinks">
+            [<a href="https://arxiv.org/pdf/1703.06891.pdf">pdf</a>, <a
+              href="https://arxiv.org/abs/1703.06891">arXiv</a>, <a
+              href="https://github.com/chrisdonahue/ddc">dataset</a>, <a
+              href="https://github.com/chrisdonahue/ddc">code</a>, <a href="httpis://chrisdonahue.com/ddc">demo</a>]
+          </span>
+        </li>
+        <span>
+          * Indicates equal contribution
+        </span>
+      </ul>
+    </section>
+    <section id="work">
+      <h2>Work Experience</h2>
+      <ul>
+        <li><i>(2022-Current)</i> Research Scientist at <a class="quiet" href="https://magenta.tensorflow.org">Google
+            Magenta</a>.</li>
+        <li><i>(Summer 2018)</i> Internship at <a class="quiet" href="https://magenta.tensorflow.org">Google Magenta</a>
+          (Music generation w/ <a href="http://www.iansimon.org">Ian Simon</a> and <a
+            href="http://benanne.github.io/about/">Sander Dieleman</a>)</li>
+        <li><i>(Summer 2017)</i> Internship at <a class="quiet" href="https://www.google.com/">Google</a> (Speech
+          recognition w/ <a href="https://research.google.com/pubs/BoLi.html">Bo Li</a> and <a
+            href="https://research.google.com/pubs/RohitPrabhavalkar.html">Rohit Prabhavalkar</a>)</li>
+        <li><i>(Summer 2016)</i> Internship at <a class="quiet" href="https://www.google.com/">Google Search</a></li>
+        <li><i>(Summer 2015)</i> Internship at <a class="quiet" href="https://play.google.com/music">Google Play
+            Music</a> (MIR w/ <a href="http://www-etud.iro.umontreal.ca/~boulanni/">Nicolas Boulanger-Lewandowski</a>)
+        </li>
+        <li><i>(2011-2014)</i> Mentor for <a class="quiet" href="https://cns.utexas.edu/fri">UT Freshman Research
+            Initiative</a> w/ <a href="http://joellehman.com/">Joel Lehman</a> and <a
+            href="https://www.cs.utexas.edu/~risto/">Risto Miikkulainen</a></li>
+        <li><i>(Summers 2011-2014)</i> Internships at <a class="quiet"
+            href="https://wwwext.arlut.utexas.edu/sgl.html">UT Applied Research Laboratories</a>, <a class="quiet"
+            href="https://www.qualcomm.com/">Qualcomm</a>, and two startups</li>
+      </ul>
+    </section>
+    <section id="media">
+      <h2>Media Coverage</h2>
+      <ul>
+        <li><a href="https://uploadvr.com/beat-sage-update-v2/"><i>UploadVR</i></a> Beat Sage Update Adds 90 Degree
+          Levels, Walls And Single Saber Mode</li>
+        <li><a href="https://uploadvr.com/beat-sage-ai-custom-beat-saber/"><i>UploadVR</i></a> Get Rhythm: How Beat Sage
+          Uses AI To Create Beat Saber Maps</li>
+        <li><a href="https://www.roadtovr.com/beat-saber-project-uses-ai-generate-custom-beat-maps-song/"><i>Road to
+              VR</i></a> This 'Beat Saber' Project Uses AI to Generate Custom Beat Maps for Any Song</li>
+        <!--<li><a href="https://uploadvr.com/beat-sage-mp3-support/"><i>UploadVR</i></a> Beat Sage Adds MP3 Upload Support For AI Generated Beat Saber Maps</li>-->
+        <li><a href="https://uploadvr.com/beat-sage-ai-beat-saber-custom/"><i>UploadVR</i></a> New AI Tool Turns Any
+          Song Into A Custom Beat Saber Map, And It Really Works</li>
+        <hr>
+        <li><a
+            href="https://www.stereogum.com/2043070/watch-the-flaming-lips-play-a-bowl-of-fruit-at-google-io/video/"><i>Stereogum</i></a>
+          Watch The Flaming Lips Play A Bowl Of Fruit At Google I/O</li>
+        <hr>
+        <li><a href="https://www.businessinsider.com/google-researchers-built-piano-genie-ai-tool-2018-10"><i>Business
+              Insider</i></a> A Google intern helped build an AI tool inspired by 'Guitar Hero' to let rookies play
+          piano</li>
+        <li><a
+            href="https://www.theverge.com/2018/10/16/17982596/google-magenta-ai-piano-genie-improvisation-neural-networks"><i>The
+              Verge</i></a> Google’s AI-powered Piano Genie lets anyone improvise perfectly by bashing buttons</li>
+        <li><a href="https://www.standard.co.uk/tech/piano-genie-google-magenta-ai-a3965456.html"><i>Evening
+              Standard</i></a> Piano Genie: Google's AI programme is like Guitar Hero for the piano world</li>
+        <li><a
+            href="https://www.engadget.com/2018/10/16/google-ai-piano-genie-improvise-classical-music/"><i>Engadget</i></a>
+          Google’s Piano Genie lets anyone improvise classical music</li>
+        <hr>
+        <li><a
+            href="https://www.technologyreview.com/s/604000/machine-learning-algorithm-watches-dance-dance-revolution-then-creates-dances-of-its-own/"><i>MIT
+              Tech Review</i></a> Machine-Learning Algorithm Watches DDR, Then Creates Dances of Its Own</li>
+        <li><a
+            href="https://www.theverge.com/2017/3/24/15047328/dance-dance-revolution-ai-neural-network-choreography"><i>The
+              Verge</i></a> Scientists have taught a neural network to choreograph Dance Dance Revolution levels</li>
+        <li><a href="https://www.theregister.co.uk/2017/03/24/ai_enters_dance_dance_revolution/"><i>The Register</i></a>
+          Yet another job menaced by AI! Uh, wait, it says here... Dance Dance Revolution designers</li>
+        <!--<li><a href="https://theoutline.com/post/1280/this-neural-network-has-learned-how-to-choreograph-for-ddr"><i>The Outline</i></a> This neural network has learned how to choreograph for DDR</li>-->
+        <li><a
+            href="https://noisey.vice.com/en_us/article/jp3bw7/this-machine-learned-to-choreograph-by-watching-dance-dance-revolution"><i>Vice</i></a>
+          This Machine Learned to Choreograph by Watching Dance Dance Revolution</li>
+      </ul>
+    </section>
+    <section id="other">
+      <!-- TODO: ulamidi, PD externals, stringent, liquid_one, STM FM -->
+      <h2>Other</h2>
+      <ul>
+        <li><i>(2020)</i> Released Beat Sage, a web service for automatically creating Beat Saber levels (<a
+            href="https://beatsage.com">link</a>)</li>
+        <li><i>(2020)</i> Download files from Google Drive on the command line (<a
+            href="https://chrisdonahue.com/gdrive-wget/">link</a>, <a
+            href="https://github.com/chrisdonahue/gdrive-wget">code</a>)</li>
+        <li><i>(2019)</i> PhD dissertation on music, AI, and interaction (<a
+            href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pdf/2019_ucsd_dissertation.pdf">pdf</a>)</li>
+        <li><i>(2018)</i> Transcribe a batch of solo piano recordings to MIDI (<a
+            href="piano-transcribe-batch/">link</a>)</li>
+        <li><i>(2017)</i> PhD qualifying examination (<a
+            href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pdf/2017_ucsd_quals.pdf">pdf</a>)</li>
+        <li><i>(2016)</i> Master's thesis on convolution-based cross-synthesis, (<a
+            href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pdf/2016_ucsd_eccs.pdf">pdf</a>, <a
+            href="https://github.com/chrisdonahue/ject">code</a>, <a href="http://chrisdonahue.com/ject/">vst</a>)</li>
+        <li><i>(2015)</i> Prototype for MOOC on computer music fundamentals using Web Audio API (<a
+            href="js_audio_examples/">link</a>)</li>
+        <li><i>(2015)</i> Mobile-friendly, networked musical controller (<a href="spz15/">demo</a>)</li>
+        <li><i>(2014)</i> Multichannel convolution reverb plugin (<a
+            href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pages/melder/melder.png">screenshot</a>, <a
+            href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pages/melder/melder.zip">code</a>, <a
+            href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pages/melder/melder.dll">windows vst</a>)</li>
+        <li><i>(2013)</i> Undergraduate thesis on musical instrument mimicry (<a
+            href="http://apps.cs.utexas.edu/tech_reports/reports/tr/TR-2156.pdf">pdf</a>, <a
+            href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pages/evosynth/thesis.html">examples</a>, <a
+            href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/bin/evosynth_v0.2a.zip">vst</a>)</li>
+        <li><i>(2013)</i> OpenGL 3D spectrogram (<a
+            href="https://s3-us-west-2.amazonaws.com/web-portfolio-static/pages/3dspectro/index.html">page</a>, <a
+            href="https://github.com/chrisdonahue/opengl_spectrogram">code</a>)</li>
+        <li><i>(2012-2014)</i> Played keyboard for <a href="https://foodgroup.bandcamp.com/">Food Group</a></li>
+        <li><i></i><a href=""></a></li>
+      </ul>
+    </section>
+    <br>
+    <p><i>Last updated 2023/11/05</i></p>
+  </div>
+  </div>
 
-    <script type="text/javascript" src="js/scramble.js"></script>
-    <script type="text/javascript" src="js/nustring.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-  </body>
+  <script type="text/javascript" src="js/scramble.js"></script>
+  <script type="text/javascript" src="js/nustring.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
 </html>
