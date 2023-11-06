@@ -8,7 +8,7 @@ sections:
   - block: hero
     demo: true # Only display this section in the Wowchemy demo site
     content:
-      title: Hugo Academic Theme
+      title: Chris Donahue
       image:
         filename: hero-academic.png
       cta:
@@ -39,9 +39,9 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
+      title: Chris Donahue
       # Choose a user profile to display (a folder name within `content/authors/`)
-      username: admin
+      username: chrisdonahue
   - block: skills
     content:
       title: Skills
