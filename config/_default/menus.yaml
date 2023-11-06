@@ -10,12 +10,12 @@ main:
   - name: News
     url: '#news'
     weight: 20
-  - name: Lab
-    url: '#lab'
-    weight: 40
+  - name: Group
+    url: '#group'
+    weight: 30
   - name: Publications
     url: '#featured'
-    weight: 50
+    weight: 40
   #- name: CV
   #  url: uploads/cv.pdf
   #  weight: 40

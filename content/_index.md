@@ -31,6 +31,18 @@ sections:
         - 📢 (22 Nov) [Announced](https://twitter.com/chrisdonahuey/status/1589620034887786496) job search outcome: research scientist at Magenta, faculty at CMU (F23)
     design:
       columns: '2'
+  - block: markdown
+    id: group
+    content:
+      title: G-CLef
+      subtitle: |-
+
+        {{< figure src="gclef-logo.png" >}}
+             
+      text: |-
+        I lead the **Generative Creativity Lab** (G-CLef) at CMU. Our research focuses on the development and deployment of generative AI towards augmenting human creativity. We primarily focus on musical creativity as an application domain but also explore other areas such as gaming.
+    design:
+      columns: '2'
   - block: collection
     id: featured
     content:

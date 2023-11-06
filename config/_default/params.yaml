@@ -6,9 +6,9 @@
 # Appearance
 
 appearance:
-  theme_day: minimal
-  theme_night: minimal
-  font: minimal
+  theme_day: ocean
+  theme_night: ocean
+  font: native
   font_size: L
 
 # SEO
@@ -44,13 +44,13 @@ header:
 # Site footer
 
 footer:
-  copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
-    license:
-      enable: true
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+  #copyright:
+  #  notice: '© {year} Me. This work is licensed under {license}'
+  #  license:
+  #    enable: true
+  #    allow_derivatives: false
+  #    share_alike: true
+  #    allow_commercial: false
 
 # Localization
 
@@ -69,10 +69,10 @@ features:
     enable: false
   privacy_pack:
     enable: false
-  repository:
-    url: 'https://github.com/<username>/<repository>'
-    content_dir: content
-    branch: main
+  # repository:
+  #   url: 'https://github.com/<username>/<repository>'
+  #   content_dir: content
+  #   branch: main
   avatar:
     gravatar: false
     shape: circle
@@ -88,17 +88,17 @@ features:
       repo_id: ''
       category: ''
       category_id: ''
-  search:
-    provider: wowchemy
-    algolia:
-      app_id: ''
-      api_key: ''
-      index_name: ''
-      show_logo: false
-  map:
-    provider: 'mapnik'
-    api_key: ''
-    zoom: 15
+  # search:
+  #   provider: wowchemy
+  #   algolia:
+  #     app_id: ''
+  #     api_key: ''
+  #     index_name: ''
+  #     show_logo: false
+  # map:
+  #   provider: 'mapnik'
+  #   api_key: ''
+  #   zoom: 15
 
 # Extensions
 
@@ -113,4 +113,4 @@ extensions:
 
 security:
   # Allow frame for embedding speaker notes in slides
-  allow_frame: true
+  allow_frame: false
