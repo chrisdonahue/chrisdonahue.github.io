@@ -41,12 +41,12 @@ sections:
         I lead the **Generative Creativity Lab** (G-CLef) at CMU. Our research focuses on the development and deployment of generative AI towards augmenting human creativity. We primarily focus on musical creativity as an application domain but also explore other areas such as gaming.
 
         ## PhD students
-        {{< figure src="group/irmak.jpeg" lightbox="false" max_width="200px" caption="Irmak Bukey, CSD PhD student" >}}
-        {{< figure src="group/wayne.jpeg" lightbox="false" max_width="200px" caption="Wayne Chi, CSD PhD student" >}}
+        {{< figure class="student-avi" src="group/irmak.jpeg" lightbox="false" max_width="200px" caption="<b>Irmak Bukey</b> <br/>CSD PhD student" >}}
+        {{< figure class="student-avi" src="group/wayne.jpeg" lightbox="false" max_width="200px" caption="<b>Wayne Chi</b> <br/> CSD PhD student" >}}
 
         ## Affiliates
-        {{< figure src="group/shih-lun.jpeg" lightbox="false" max_width="200px" caption="Shih-Lun Wu, LTI Masters student" >}}
-        {{< figure src="group/michael.jpeg" lightbox="false" max_width="200px" caption="Michael Feffer, S3D PhD student" link="https://mfeffer.github.io">}}
+        {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="200px" caption="<b>Shih-Lun Wu</b> <br/> LTI Masters student" >}}
+        {{< figure class="student-avi" src="group/michael.jpeg" lightbox="false" max_width="200px" caption="<b>Michael Feffer</b> <br/> S3D PhD student" link="https://mfeffer.github.io">}}
         
     design:
       columns: '2'
