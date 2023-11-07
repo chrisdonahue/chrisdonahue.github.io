@@ -126,11 +126,11 @@ highlight_name: true
 
 **Email**: <span id="email-scrambler"></span>
 
-I am an **assistant professor in the [Computer Science Department](https://csd.cmu.edu/) at Carnegie Mellon University**. I am also a **part-time research scientist at [Google Magenta](https://magenta.tensorflow.org)**.
+I am an **Assistant Professor in the [Computer Science Department](https://csd.cmu.edu/) at Carnegie Mellon University**, and also a **Research Scientist at Google DeepMind on the [Magenta](https://magenta.tensorflow.org) team** (part-time).
 
-My research goal is to _build music technology that enables a broader set of users to engage with music on a deeper level_. To this end, I improve ML methods for generative modeling of music and other multimedia, and build interactive systems which allow anyone to leverage resultant models.
+My research goal is to _build music technology that enables a broader set of users to engage with music on a deeper level_. To this end, I work on generative AI methods for music and other multimedia, and build interactive systems that allow anyone to use generative AI models for musical expression.
 
-I focus on real-world systems...
+I am particularly drawn to research ideas with direct real-world applications, and my work often involves building systems for real users to be evaluated in-the-wild. For example, my work on [Piano Genie](https://magenta.tensorflow.org/pianogenie) was used in a [live performance by The Flaming Lips](https://magenta.tensorflow.org/fruitgenie), and my work on [Dance Dance Convolution](https://www.theverge.com/2017/3/24/15047328/dance-dance-revolution-ai-neural-network-choreography) powers [Beat Sage](https://beatsage.com/), a live service used by thousands of users a day to create multimodal music game content.
 
 Previously, I was a postdoc at Stanford CS advised by [Percy Liang](https://cs.stanford.edu/~pliang/). Before that, I completed a PhD at UCSD co-advised by [Miller Puckette](https://msp.ucsd.edu/) and [Julian McAuley](https://cseweb.ucsd.edu/~jmcauley/).
 {style="text-align: justify;"}

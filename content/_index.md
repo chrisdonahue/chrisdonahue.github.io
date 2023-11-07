@@ -8,7 +8,7 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Chris Donahue
+      title: About
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: chrisdonahue
   - block: markdown
