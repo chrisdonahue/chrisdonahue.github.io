@@ -23,6 +23,6 @@ featured: false
 
 url_pdf: "https://arxiv.org/pdf/2107.05916.pdf"
 url_arxiv: "https://arxiv.org/abs/2107.05916"
-url_demo: "https://salu133445.github.io/arranger/demo"
+url_sound: "https://salu133445.github.io/arranger/"
 url_code: "https://github.com/salu133445/arranger"
 ---

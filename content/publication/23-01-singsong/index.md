@@ -1,5 +1,5 @@
 ---
-title: "SingSong: Generating musical accompaniments from singing"
+title: "SingSong: Generating Musical Accompaniments from Singing"
 authors:
 - chrisdonahue
 - Antoine Caillon
@@ -16,7 +16,7 @@ author_notes:
 - "Equal contribution"
 - "Equal contribution"
 - "Equal contribution"
-date: "2023-01-01T00:00:00Z"
+date: "2023-01-30T00:00:00Z"
 doi: ""
 publication_types: ["article"]
 publication: ""

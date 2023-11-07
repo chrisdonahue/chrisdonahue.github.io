@@ -4,7 +4,7 @@ authors:
 - chrisdonahue
 - Julian McAuley
 - Miller Puckette
-date: "2018-02-01T00:00:00Z"
+date: "2019-05-06T00:00:00Z"
 doi: ""
 
 publication_types: ["paper-conference"]

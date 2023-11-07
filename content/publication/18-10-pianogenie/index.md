@@ -4,7 +4,7 @@ authors:
 - chrisdonahue
 - Ian Simon
 - Sander Dieleman
-date: "2019-01-01T00:00:00Z"
+date: "2019-03-16T00:00:00Z"
 doi: ""
 
 publication_types: ["paper-conference"]

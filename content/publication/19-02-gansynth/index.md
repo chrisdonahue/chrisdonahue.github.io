@@ -7,7 +7,7 @@ authors:
 - Ishaan Gulrajani
 - chrisdonahue
 - Adam Roberts
-date: "2019-01-01T00:00:00Z"
+date: "2019-05-06T00:00:00Z"
 doi: ""
 
 publication_types: ["paper-conference"]
@@ -23,9 +23,12 @@ tags:
 - ICLR
 featured: false
 
+links:
+  - name: Blog
+    url: "https://magenta.tensorflow.org/gansynth"
+
 url_arxiv: "https://arxiv.org/abs/1902.08710"
 url_pdf: "https://arxiv.org/pdf/1902.08710.pdf"
-url_post: "https://magenta.tensorflow.org/gansynth"
 url_code: "https://github.com/tensorflow/magenta/tree/master/magenta/models/gansynth"
 url_sound: "https://storage.googleapis.com/magentadata/papers/gansynth/index.html"
 ---
