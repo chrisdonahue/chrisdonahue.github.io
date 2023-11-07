@@ -45,7 +45,7 @@ sections:
         {{< figure class="student-avi" src="group/wayne.jpeg" lightbox="false" max_width="200px" caption="<b>Wayne Chi</b> <br/> CSD PhD student" >}}
 
         ## Affiliates
-        {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="200px" caption="<b>Shih-Lun Wu</b> <br/> LTI Masters student" >}}
+        {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="200px" caption="<b>Shih-Lun Wu</b> <br/> LTI Masters student" link="https://slseanwu.github.io/" >}}
         {{< figure class="student-avi" src="group/michael.jpeg" lightbox="false" max_width="200px" caption="<b>Michael Feffer</b> <br/> S3D PhD student" link="https://mfeffer.github.io">}}
         
     design:
