@@ -11,5 +11,8 @@ Overriding HTML templates can be done by overriding from `layouts` directory of 
 ## TODO
 
 - Figure out how Hugo module versioning works so I don't actually bring in breaking changes upstream
-- Add "Play" section to website
 - Add auto build of CV to Github Actions
+- Media section
+- Featured publications section
+- Add "Play" section to website (string?)
+- Remove stupid publication filtering thing
