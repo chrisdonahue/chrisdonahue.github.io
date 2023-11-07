@@ -16,19 +16,19 @@ sections:
     content:
       title: News
       text: |-
-        - 🗞️ (23 Oct) Interviewed for [Pitchfork article about MusicLM](https://pitchfork.com/features/overtones/google-text-to-music)
-        - 🎤 (23 Oct) Invited talk at [Stanford HAI Conference](https://hai.stanford.edu/events/new-horizons-generative-ai-science-creativity-and-society) ([recording](https://www.youtube.com/watch?v=RlSkLc38hL4&t=10457s), [slides](https://docs.google.com/presentation/d/1pAe-AB2f6g2dqM0vCj3ktIcrqYv_rXtR9YlwaHAWQhI/edit))
-        - 🧑‍🏫 (23 Oct) Guest lecture for [CMU LLM Course](https://cmu-llms.org/) ([slides](https://docs.google.com/presentation/d/1AS10aoPDCNjDAaHFYi2yHDm41HF7NyP5r5Vvr7nzp5k/edit))
-        - 👋 (23 Oct) New PhD students: Irmak Bukey and Wayne Chi
-        - 🧑‍🏫 (23 Sep) Started as Assistant Professor at CMU
-        - ❤️ (23 Jul) **Got married to [Maggie Henderson](https://www.maggie-henderson.com/)!**
-        - 📜 (23 Jun) New preprint led by [John Thickstun](https://johnthickstun.com/): [Anticipatory Music Transformer](https://arxiv.org/abs/2306.08620)
-        - 🎤 (23 Apr) Invited talk at CMU Music Technology Seminar ([slides](https://docs.google.com/presentation/d/19tz0oUQf9fD1VRKFG_NPJWHQZ-OXZzp889bgLxKyu_s/edit#slide=id.p))
-        - 🧑‍🏫 (23 Apr) Guest lecture for CMU Electronic Music course ([slides](https://docs.google.com/presentation/d/1nGHcqDFx6ahhTzOSjAFpmn_1symIIoJ1pN4zaMw2uEk/edit#slide=id.p))
-        - 🎤 (23 Feb) Invited talk at AAAI Workshop on Creative AI Generation ([slides](https://docs.google.com/presentation/d/1DO4BcFu64abcS-l5F34fe_4g2U4AkZtpUnY8ifNLzN8/edit#slide=id.p))
-        - 📜 (23 Jan) New preprint (first author): [SingSong](https://arxiv.org/abs/2301.12662)
-        - 📜 (22 Dec) Presentation at [ISMIR Late Breaking Demo](https://ismir2022program.ismir.net/lbd_399.html) led by [Michael Feffer](https://acmilab.org/people/michael-feffer/)
-        - 📢 (22 Nov) [Announced](https://twitter.com/chrisdonahuey/status/1589620034887786496) job search outcome: research scientist at Magenta, faculty at CMU (F23)
+        - 🗞️ (Oct 2023) Interviewed for [Pitchfork article about MusicLM](https://pitchfork.com/features/overtones/google-text-to-music)
+        - 🎤 (Oct 2023) Invited talk at [Stanford HAI Conference](https://hai.stanford.edu/events/new-horizons-generative-ai-science-creativity-and-society) ([recording](https://www.youtube.com/watch?v=RlSkLc38hL4&t=10457s), [slides](https://docs.google.com/presentation/d/1pAe-AB2f6g2dqM0vCj3ktIcrqYv_rXtR9YlwaHAWQhI/edit))
+        - 🧑‍🏫 (Oct 2023) Guest lecture for [CMU LLM Course](https://cmu-llms.org/) ([slides](https://docs.google.com/presentation/d/1AS10aoPDCNjDAaHFYi2yHDm41HF7NyP5r5Vvr7nzp5k/edit))
+        - 👋 (Oct 2023) New PhD students: Irmak Bukey and Wayne Chi
+        - 🧑‍🏫 (Sep 2023) Started as Assistant Professor at CMU
+        - ❤️ (Jul 2023) **Got married to [Maggie Henderson](https://www.maggie-henderson.com/)!**
+        - 📜 (Jun 2023) New preprint led by [John Thickstun](https://johnthickstun.com/): [Anticipatory Music Transformer](https://arxiv.org/abs/2306.08620)
+        - 🎤 (Apr 2023) Invited talk at CMU Music Technology Seminar ([slides](https://docs.google.com/presentation/d/19tz0oUQf9fD1VRKFG_NPJWHQZ-OXZzp889bgLxKyu_s/edit#slide=id.p))
+        - 🧑‍🏫 (Apr 2023) Guest lecture for CMU Electronic Music course ([slides](https://docs.google.com/presentation/d/1nGHcqDFx6ahhTzOSjAFpmn_1symIIoJ1pN4zaMw2uEk/edit#slide=id.p))
+        - 🎤 (Feb 2023) Invited talk at AAAI Workshop on Creative AI Generation ([slides](https://docs.google.com/presentation/d/1DO4BcFu64abcS-l5F34fe_4g2U4AkZtpUnY8ifNLzN8/edit#slide=id.p))
+        - 📜 (Jan 2023) New preprint (first author): [SingSong](https://arxiv.org/abs/2301.12662)
+        - 📜 (Dec 2022) Presentation at [ISMIR Late Breaking Demo](https://ismir2022program.ismir.net/lbd_399.html) led by [Michael Feffer](https://acmilab.org/people/michael-feffer/)
+        - 📢 (Nov 2022) [Announced](https://twitter.com/chrisdonahuey/status/1589620034887786496) job search outcome: research scientist at Magenta, faculty at CMU (F23)
     design:
       columns: '2'
   - block: markdown
