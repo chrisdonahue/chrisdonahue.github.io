@@ -13,8 +13,8 @@ main:
   - name: Group
     url: '#group'
     weight: 30
-  - name: Publications
-    url: '#featured'
+  - name: Papers
+    url: '#papers'
     weight: 40
   #- name: CV
   #  url: uploads/cv.pdf
