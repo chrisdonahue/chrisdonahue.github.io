@@ -16,6 +16,7 @@ sections:
     content:
       title: News
       text: |-
+        - 📜 (Nov 2023) New [preprint on controllable music gen](https://arxiv.org/abs/2311.07069) led by [Shih-Lun Wu](https://slseanwu.github.io/) (applying to PhD positions!)
         - 🗞️ (Oct 2023) Interviewed for [Pitchfork article about MusicLM](https://pitchfork.com/features/overtones/google-text-to-music)
         - 🎤 (Oct 2023) Invited talk at [Stanford HAI Conference](https://hai.stanford.edu/events/new-horizons-generative-ai-science-creativity-and-society) ([recording](https://www.youtube.com/watch?v=RlSkLc38hL4&t=10457s), [slides](https://docs.google.com/presentation/d/1pAe-AB2f6g2dqM0vCj3ktIcrqYv_rXtR9YlwaHAWQhI/edit))
         - 🧑‍🏫 (Oct 2023) Guest lecture for [CMU LLM Course](https://cmu-llms.org/) ([slides](https://docs.google.com/presentation/d/1AS10aoPDCNjDAaHFYi2yHDm41HF7NyP5r5Vvr7nzp5k/edit))
