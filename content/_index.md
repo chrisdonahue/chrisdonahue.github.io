@@ -16,7 +16,7 @@ sections:
     content:
       title: News
       text: |-
-        - 📜 (Nov 2023) [SingSong](https://twitter.com/chrisdonahuey/status/1620232090066497536) incorporated into [Google DeepMind's Music AI Tools](https://deepmind.google/discover/blog/transforming-the-future-of-music-creation/).
+        - 🗞️ (Nov 2023) [SingSong](https://twitter.com/chrisdonahuey/status/1620232090066497536) incorporated into [Google DeepMind's Music AI Tools](https://deepmind.google/discover/blog/transforming-the-future-of-music-creation/).
         - 📜 (Nov 2023) Work presented at [HCMIR Workshop](https://ceur-ws.org/Vol-3528/paper3.pdf) by [Michael Feffer](https://acmilab.org/people/michael-feffer/).
         - 📜 (Nov 2023) New [preprint on controllable music gen](https://arxiv.org/abs/2311.07069) led by [Shih-Lun Wu](https://slseanwu.github.io/) (applying to PhD positions!)
         - 🗞️ (Oct 2023) Interviewed for [Pitchfork article about MusicLM](https://pitchfork.com/features/overtones/google-text-to-music)
