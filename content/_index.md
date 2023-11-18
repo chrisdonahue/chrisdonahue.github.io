@@ -16,6 +16,7 @@ sections:
     content:
       title: News
       text: |-
+        - 📜 (Nov 2023) My work on [SingSong](https://twitter.com/chrisdonahuey/status/1620232090066497536) incorporated into [Google DeepMind's Music AI Tools](https://deepmind.google/discover/blog/transforming-the-future-of-music-creation/).
         - 📜 (Nov 2023) Work presented at [HCMIR Workshop](https://ceur-ws.org/Vol-3528/paper3.pdf) by [Michael Feffer](https://acmilab.org/people/michael-feffer/).
         - 📜 (Nov 2023) New [preprint on controllable music gen](https://arxiv.org/abs/2311.07069) led by [Shih-Lun Wu](https://slseanwu.github.io/) (applying to PhD positions!)
         - 🗞️ (Oct 2023) Interviewed for [Pitchfork article about MusicLM](https://pitchfork.com/features/overtones/google-text-to-music)
@@ -28,7 +29,7 @@ sections:
         - 🎤 (Apr 2023) Invited talk at CMU Music Technology Seminar ([slides](https://docs.google.com/presentation/d/19tz0oUQf9fD1VRKFG_NPJWHQZ-OXZzp889bgLxKyu_s/edit#slide=id.p))
         - 🧑‍🏫 (Apr 2023) Guest lecture for CMU Electronic Music course ([slides](https://docs.google.com/presentation/d/1nGHcqDFx6ahhTzOSjAFpmn_1symIIoJ1pN4zaMw2uEk/edit#slide=id.p))
         - 🎤 (Feb 2023) Invited talk at AAAI Workshop on Creative AI Generation ([slides](https://docs.google.com/presentation/d/1DO4BcFu64abcS-l5F34fe_4g2U4AkZtpUnY8ifNLzN8/edit#slide=id.p))
-        - 📜 (Jan 2023) New preprint (first author): [SingSong](https://arxiv.org/abs/2301.12662)
+        - 📜 (Jan 2023) New preprint (first author): [SingSong](https://twitter.com/chrisdonahuey/status/1620232090066497536)
         - 📜 (Dec 2022) Presentation at [ISMIR Late Breaking Demo](https://ismir2022program.ismir.net/lbd_399.html) led by [Michael Feffer](https://acmilab.org/people/michael-feffer/)
         - 📢 (Nov 2022) [Announced](https://twitter.com/chrisdonahuey/status/1589620034887786496) job search outcome: research scientist at Magenta, faculty at CMU (F23)
     design:
