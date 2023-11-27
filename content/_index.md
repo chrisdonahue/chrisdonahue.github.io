@@ -24,7 +24,6 @@ sections:
         - 🧑‍🏫 (Oct 2023) Guest lecture for [CMU LLM Course](https://cmu-llms.org/) ([slides](https://docs.google.com/presentation/d/1AS10aoPDCNjDAaHFYi2yHDm41HF7NyP5r5Vvr7nzp5k/edit))
         - 👋 (Oct 2023) New PhD students: Irmak Bukey and Wayne Chi
         - 🧑‍🏫 (Sep 2023) Started as Assistant Professor at CMU
-        - ❤️ (Jul 2023) **Got married to [Maggie Henderson](https://www.maggie-henderson.com/)!**
         - 📜 (Jun 2023) New preprint led by [John Thickstun](https://johnthickstun.com/): [Anticipatory Music Transformer](https://arxiv.org/abs/2306.08620)
         - 🎤 (Apr 2023) Invited talk at CMU Music Technology Seminar ([slides](https://docs.google.com/presentation/d/19tz0oUQf9fD1VRKFG_NPJWHQZ-OXZzp889bgLxKyu_s/edit#slide=id.p))
         - 🧑‍🏫 (Apr 2023) Guest lecture for CMU Electronic Music course ([slides](https://docs.google.com/presentation/d/1nGHcqDFx6ahhTzOSjAFpmn_1symIIoJ1pN4zaMw2uEk/edit#slide=id.p))
