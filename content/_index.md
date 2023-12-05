@@ -30,7 +30,6 @@ sections:
         - 🎤 (Feb 2023) Invited talk at AAAI Workshop on Creative AI Generation ([slides](https://docs.google.com/presentation/d/1DO4BcFu64abcS-l5F34fe_4g2U4AkZtpUnY8ifNLzN8/edit#slide=id.p))
         - 📜 (Jan 2023) New preprint (first author): [SingSong](https://twitter.com/chrisdonahuey/status/1620232090066497536)
         - 📜 (Dec 2022) Presentation at [ISMIR Late Breaking Demo](https://ismir2022program.ismir.net/lbd_399.html) led by [Michael Feffer](https://acmilab.org/people/michael-feffer/)
-        - 📢 (Nov 2022) [Announced](https://twitter.com/chrisdonahuey/status/1589620034887786496) job search outcome: research scientist at Magenta, faculty at CMU (F23)
     design:
       columns: '2'
   - block: markdown
@@ -50,6 +49,10 @@ sections:
         {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="200px" caption="<b>Shih-Lun Wu</b> <br/> LTI MS student" link="https://slseanwu.github.io/" >}}
         {{< figure class="student-avi" src="group/michael.jpeg" lightbox="false" max_width="200px" caption="<b>Michael Feffer</b> <br/> S3D PhD student" link="https://mfeffer.github.io">}}
         {{< figure class="student-avi" src="group/alex.jpeg" lightbox="false" max_width="200px" caption="<b>Alexander Wang</b> <br/> Music and Technology MS student" link="https://ayw0.github.io/">}}
+
+        ## Supporters
+        The G-CLef lab is supported by generous contributions from:
+        {{< figure class="supporter-logo" src="supporters/adobe.png" lightbox="false" max_width="200px" >}}
         
     design:
       columns: '2'
