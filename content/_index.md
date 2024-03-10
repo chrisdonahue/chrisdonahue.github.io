@@ -52,7 +52,8 @@ sections:
 
         ## Supporters
         The G-CLef lab is supported by generous contributions from:
-        {{< figure class="supporter-logo" src="supporters/adobe.png" lightbox="false" max_width="200px" >}}
+        [{{< figure class="supporter-logo" src="supporters/adobe.png" lightbox="false" max_width="200px" >}}](https://research.adobe.com/)
+        [{{< figure class="supporter-logo" src="supporters/klab.png" lightbox="false" max_width="200px" >}}](https://www.klab.com/)
         
     design:
       columns: '2'
