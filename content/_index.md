@@ -43,7 +43,7 @@ sections:
 
         ## PhD students
         {{< figure class="student-avi" src="group/irmak.jpeg" lightbox="false" max_width="200px" caption="<b>Irmak Bukey</b> <br/>CSD PhD student" >}}
-        {{< figure class="student-avi" src="group/wayne.jpeg" lightbox="false" max_width="200px" caption="<b>Wayne Chi</b> <br/> CSD PhD student" >}}
+        {{< figure class="student-avi" src="group/wayne.jpeg" lightbox="false" max_width="200px" caption="<b>Wayne Chi</b> <br/> CSD PhD student" link="https://waynechi.com" >}}
 
         ## Affiliates
         {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="200px" caption="<b>Shih-Lun Wu</b> <br/> LTI MS student" link="https://slseanwu.github.io/" >}}
