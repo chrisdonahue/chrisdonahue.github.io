@@ -16,6 +16,9 @@ sections:
     content:
       title: News
       text: |-
+        - 🌐 (Mar 2024) A Copilot-like tool for musicians featuring the Anticipatory Music Transformer was [launched in beta](https://forum.hooktheory.com/t/introducing-aria-your-new-generative-ai-assistant-in-hookpad/8082).
+        - 🗞️ (Mar 2024) [Music ControlNet](https://arxiv.org/abs/2311.07069) to appear in TASLP (IEEE/ACM Transactions on Audio, Speech, and Language Processing).
+        - 🗞️ (Mar 2024) [Anticipatory Music Transformer](https://arxiv.org/abs/2306.08620) to appear in TMLR (Transactions on Machine Learning Research).
         - 🗞️ (Nov 2023) [SingSong](https://twitter.com/chrisdonahuey/status/1620232090066497536) incorporated into [Google DeepMind's Music AI Tools](https://deepmind.google/discover/blog/transforming-the-future-of-music-creation/).
         - 📜 (Nov 2023) Work presented at [HCMIR Workshop](https://ceur-ws.org/Vol-3528/paper3.pdf) by [Michael Feffer](https://acmilab.org/people/michael-feffer/).
         - 📜 (Nov 2023) New [preprint on controllable music gen](https://arxiv.org/abs/2311.07069) led by [Shih-Lun Wu](https://slseanwu.github.io/) (applying to PhD positions!)
@@ -29,7 +32,6 @@ sections:
         - 🧑‍🏫 (Apr 2023) Guest lecture for CMU Electronic Music course ([slides](https://docs.google.com/presentation/d/1nGHcqDFx6ahhTzOSjAFpmn_1symIIoJ1pN4zaMw2uEk/edit#slide=id.p))
         - 🎤 (Feb 2023) Invited talk at AAAI Workshop on Creative AI Generation ([slides](https://docs.google.com/presentation/d/1DO4BcFu64abcS-l5F34fe_4g2U4AkZtpUnY8ifNLzN8/edit#slide=id.p))
         - 📜 (Jan 2023) New preprint (first author): [SingSong](https://twitter.com/chrisdonahuey/status/1620232090066497536)
-        - 📜 (Dec 2022) Presentation at [ISMIR Late Breaking Demo](https://ismir2022program.ismir.net/lbd_399.html) led by [Michael Feffer](https://acmilab.org/people/michael-feffer/)
     design:
       columns: '2'
   - block: markdown
