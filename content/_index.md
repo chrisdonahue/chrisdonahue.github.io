@@ -19,6 +19,7 @@ sections:
         - 🌐 (Mar 2024) A Copilot-like tool for musicians featuring the Anticipatory Music Transformer was [launched in beta](https://forum.hooktheory.com/t/introducing-aria-your-new-generative-ai-assistant-in-hookpad/8082).
         - 🗞️ (Mar 2024) [Music ControlNet](https://arxiv.org/abs/2311.07069) to appear in TASLP (IEEE/ACM Transactions on Audio, Speech, and Language Processing).
         - 🗞️ (Mar 2024) [Anticipatory Music Transformer](https://arxiv.org/abs/2306.08620) to appear in TMLR (Transactions on Machine Learning Research).
+        - 🌐 (Mar 2024) Launch of [MusicFX DJ Mode](https://aitestkitchen.withgoogle.com/tools/music-fx), a real-time music audio generation tool developed by my team at Google.
         - 🗞️ (Nov 2023) [SingSong](https://twitter.com/chrisdonahuey/status/1620232090066497536) incorporated into [Google DeepMind's Music AI Tools](https://deepmind.google/discover/blog/transforming-the-future-of-music-creation/).
         - 📜 (Nov 2023) Work presented at [HCMIR Workshop](https://ceur-ws.org/Vol-3528/paper3.pdf) by [Michael Feffer](https://acmilab.org/people/michael-feffer/).
         - 📜 (Nov 2023) New [preprint on controllable music gen](https://arxiv.org/abs/2311.07069) led by [Shih-Lun Wu](https://slseanwu.github.io/) (applying to PhD positions!)
