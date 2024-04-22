@@ -16,6 +16,7 @@ sections:
     content:
       title: News
       text: |-
+        - 🪑 (Apr 2024) Named as the [Dannenberg](https://www.cs.cmu.edu/~rbd/) Assistant Professor of Computer Science.
         - 🛎️ (Apr 2024) Serving as SPC Chair for ISMIR 2024 - record number of submissions (415)!
         - 🌐 (Mar 2024) A Copilot-like tool for musicians featuring the Anticipatory Music Transformer was [launched in beta](https://forum.hooktheory.com/t/introducing-aria-your-new-generative-ai-assistant-in-hookpad/8082).
         - 📜 (Mar 2024) [Music ControlNet](https://arxiv.org/abs/2311.07069) to appear in TASLP (IEEE/ACM Transactions on Audio, Speech, and Language Processing).
