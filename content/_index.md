@@ -16,8 +16,9 @@ sections:
     content:
       title: News
       text: |-
+        - 📜 (Jun 2024) Two papers accepted to ISMIR 2024.
         - 🪑 (Apr 2024) Named as the [Dannenberg](https://www.cs.cmu.edu/~rbd/) Assistant Professor of Computer Science.
-        - 🛎️ (Apr 2024) Serving as SPC Chair for ISMIR 2024 - record number of submissions (415)!
+        - 🛎️ (Apr 2024) Serving as Senior Program Committee Co-chair for ISMIR 2024 - record number of submissions (415).
         - 🌐 (Mar 2024) A Copilot-like tool for musicians featuring the Anticipatory Music Transformer was [launched in beta](https://forum.hooktheory.com/t/introducing-aria-your-new-generative-ai-assistant-in-hookpad/8082).
         - 📜 (Mar 2024) [Music ControlNet](https://arxiv.org/abs/2311.07069) to appear in TASLP (IEEE/ACM Transactions on Audio, Speech, and Language Processing).
         - 📜 (Mar 2024) [Anticipatory Music Transformer](https://arxiv.org/abs/2306.08620) to appear in TMLR (Transactions on Machine Learning Research).
@@ -31,10 +32,6 @@ sections:
         - 👋 (Oct 2023) New PhD students: Irmak Bukey and Wayne Chi
         - 🧑‍🏫 (Sep 2023) Started as Assistant Professor at CMU
         - 📜 (Jun 2023) New preprint led by [John Thickstun](https://johnthickstun.com/): [Anticipatory Music Transformer](https://arxiv.org/abs/2306.08620)
-        - 🎤 (Apr 2023) Invited talk at CMU Music Technology Seminar ([slides](https://docs.google.com/presentation/d/19tz0oUQf9fD1VRKFG_NPJWHQZ-OXZzp889bgLxKyu_s/edit#slide=id.p))
-        - 🧑‍🏫 (Apr 2023) Guest lecture for CMU Electronic Music course ([slides](https://docs.google.com/presentation/d/1nGHcqDFx6ahhTzOSjAFpmn_1symIIoJ1pN4zaMw2uEk/edit#slide=id.p))
-        - 🎤 (Feb 2023) Invited talk at AAAI Workshop on Creative AI Generation ([slides](https://docs.google.com/presentation/d/1DO4BcFu64abcS-l5F34fe_4g2U4AkZtpUnY8ifNLzN8/edit#slide=id.p))
-        - 📜 (Jan 2023) New preprint (first author): [SingSong](https://twitter.com/chrisdonahuey/status/1620232090066497536)
     design:
       columns: '2'
   - block: markdown
