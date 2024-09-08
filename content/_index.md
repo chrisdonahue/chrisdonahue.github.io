@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: ''
+title: ""
 date: 2022-10-24
 type: landing
 
@@ -33,7 +33,7 @@ sections:
         - 🧑‍🏫 (Sep 2023) Started as Assistant Professor at CMU
         - 📜 (Jun 2023) New preprint led by [John Thickstun](https://johnthickstun.com/): [Anticipatory Music Transformer](https://arxiv.org/abs/2306.08620)
     design:
-      columns: '2'
+      columns: "2"
   - block: markdown
     id: group
     content:
@@ -44,23 +44,27 @@ sections:
         I lead the **Generative Creativity Lab** (G-CLef) at CMU. Our research focuses on the development and deployment of generative AI towards augmenting human creativity. We primarily focus on musical creativity as an application domain but also explore other areas such as gaming.
 
         ## PhD students
-        {{< figure class="student-avi" src="group/irmak.jpeg" lightbox="false" max_width="200px" caption="<b>Irmak Bukey</b> <br/>CSD PhD student" >}}
-        {{< figure class="student-avi" src="group/wayne.jpeg" lightbox="false" max_width="200px" caption="<b>Wayne Chi</b> <br/> CSD PhD student" link="https://waynechi.com" >}}
+        {{< figure class="student-avi" src="group/irmak.jpeg" lightbox="false" max_width="200px" caption="<b>Irmak Bukey</b> <br/>CSD PhD student <br/><br/>" >}}
+        {{< figure class="student-avi" src="group/wayne.jpeg" lightbox="false" max_width="200px" caption="<b>Wayne Chi</b> <br/> CSD PhD student <br/> Coadvised w/ <a href='https://www.cs.cmu.edu/~atalwalk/'>Ameet Talwalkar</a>" link="https://waynechi.com" >}}
 
-        ## Affiliates
-        {{< figure class="student-avi" src="group/alex.jpeg" lightbox="false" max_width="200px" caption="<b>Alexander Wang</b> <br/> Music and Technology MS student" link="https://ayw0.github.io/">}}
-        {{< figure class="student-avi" src="group/michael.jpeg" lightbox="false" max_width="200px" caption="<b>Michael Feffer</b> <br/> S3D PhD student" link="https://mfeffer.github.io">}}
-        {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="200px" caption="<b>Shih-Lun Wu</b> <br/> LTI MS student" link="https://slseanwu.github.io/" >}}
+        ## Visitors and affiliates
         {{< figure class="student-avi" src="group/yewon.jpeg" lightbox="false" max_width="200px" caption="<b>Yewon Kim</b> <br/> Visiting researcher, KAIST" link="https://yewon-kim.com/" >}}
+        {{< figure class="student-avi" src="group/will.jpeg" lightbox="false" max_width="200px" caption="<b>Yichen (William) Huang</b> <br/> Visiting researcher" link="https://www.yichenwilliamhuang.com/" >}}
+        {{< figure class="student-avi" src="group/michael.jpeg" lightbox="false" max_width="200px" caption="<b>Michael Feffer</b> <br/> S3D PhD student" link="https://mfeffer.github.io">}}
+
+        ## Alumni
+        {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="100px" caption="<b>Shih-Lun Wu</b> <br/> LTI MS student <br/> Now PhD @ MIT EECS" link="https://slseanwu.github.io/" >}}
+        {{< figure class="student-avi" src="group/alex.jpeg" lightbox="false" max_width="100px" caption="<b>Alexander Wang</b> <br/> Music and Technology MS student <br/> Now Researcher @ Michigan CS" link="https://ayw0.github.io/">}}
 
         ## Supporters
         The G-CLef lab is supported by generous contributions from:
+        [{{< figure class="supporter-logo" src="supporters/sony-ai.png" lightbox="false" max_width="200px" >}}](https://ai.sony/)
         [{{< figure class="supporter-logo" src="supporters/adobe.png" lightbox="false" max_width="200px" >}}](https://research.adobe.com/)
         [{{< figure class="supporter-logo" src="supporters/hooktheory.png" lightbox="false" max_width="200px" >}}](https://www.hooktheory.com/)
         [{{< figure class="supporter-logo" src="supporters/klab.png" lightbox="false" max_width="200px" >}}](https://www.klab.com/)
-        
+
     design:
-      columns: '2'
+      columns: "2"
 
   # - block: collection
   #   id: featured
@@ -87,7 +91,7 @@ sections:
           - publication
         exclude_featured: true
     design:
-      columns: '2'
+      columns: "2"
       view: citation
 
   # - block: hero
@@ -121,7 +125,6 @@ sections:
   #       gradient_end: '#1976d2'
   #       gradient_start: '#004ba0'
   #       text_color_light: true
-
 
   # - block: skills
   #   content:
@@ -318,7 +321,7 @@ sections:
   #     # Choose a map provider in `params.yaml` to show a map from these coordinates
   #     coordinates:
   #       latitude: '37.4275'
-  #       longitude: '-122.1697'  
+  #       longitude: '-122.1697'
   #     contact_links:
   #       - icon: twitter
   #         icon_pack: fab
