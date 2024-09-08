@@ -44,17 +44,17 @@ sections:
         I lead the **Generative Creativity Lab** (G-CLef) at CMU. Our research focuses on the development and deployment of generative AI towards augmenting human creativity. We primarily focus on musical creativity as an application domain but also explore other areas such as gaming.
 
         ## PhD students
-        {{< figure class="student-avi" src="group/irmak.jpeg" lightbox="false" max_width="200px" caption="<b>Irmak Bukey</b> <br/>CSD PhD student <br/><br/>" >}}
-        {{< figure class="student-avi" src="group/wayne.jpeg" lightbox="false" max_width="200px" caption="<b>Wayne Chi</b> <br/> CSD PhD student <br/> Coadvised w/ <a href='https://www.cs.cmu.edu/~atalwalk/'>Ameet Talwalkar</a>" link="https://waynechi.com" >}}
+        {{< figure class="student-avi" src="group/irmak.jpeg" lightbox="false" max_width="150px" caption="<b>Irmak Bukey</b> <br/>CSD PhD student <br/><br/>" >}}
+        {{< figure class="student-avi" src="group/wayne.jpeg" lightbox="false" max_width="150px" caption="<b>Wayne Chi</b> <br/> CSD PhD student <br/> Coadvised w/ <a href='https://www.cs.cmu.edu/~atalwalk/'>Ameet Talwalkar</a>" link="https://waynechi.com" >}}
 
         ## Visitors and affiliates
-        {{< figure class="student-avi" src="group/yewon.jpeg" lightbox="false" max_width="200px" caption="<b>Yewon Kim</b> <br/> Visiting researcher, KAIST" link="https://yewon-kim.com/" >}}
-        {{< figure class="student-avi" src="group/will.jpeg" lightbox="false" max_width="200px" caption="<b>Yichen (William) Huang</b> <br/> Visiting researcher" link="https://www.yichenwilliamhuang.com/" >}}
-        {{< figure class="student-avi" src="group/michael.jpeg" lightbox="false" max_width="200px" caption="<b>Michael Feffer</b> <br/> S3D PhD student" link="https://mfeffer.github.io">}}
+        {{< figure class="student-avi" src="group/yewon.jpeg" lightbox="false" max_width="150px" caption="<b>Yewon Kim</b> <br/> Visiting researcher, KAIST" link="https://yewon-kim.com/" >}}
+        {{< figure class="student-avi" src="group/will.jpeg" lightbox="false" max_width="150px" caption="<b>Yichen (William) Huang</b> <br/> Visiting researcher" link="https://www.yichenwilliamhuang.com/" >}}
+        {{< figure class="student-avi" src="group/michael.jpeg" lightbox="false" max_width="150px" caption="<b>Michael Feffer</b> <br/> S3D PhD student" link="https://mfeffer.github.io">}}
 
         ## Alumni
-        {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="100px" caption="<b>Shih-Lun Wu</b> <br/> LTI MS student <br/> Now PhD @ MIT EECS" link="https://slseanwu.github.io/" >}}
-        {{< figure class="student-avi" src="group/alex.jpeg" lightbox="false" max_width="100px" caption="<b>Alexander Wang</b> <br/> Music and Technology MS student <br/> Now Researcher @ Michigan CS" link="https://ayw0.github.io/">}}
+        {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="150px" caption="<b>Shih-Lun Wu</b> <br/> LTI MS student <br/> Now PhD @ MIT EECS" link="https://slseanwu.github.io/" >}}
+        {{< figure class="student-avi" src="group/alex.jpeg" lightbox="false" max_width="150px" caption="<b>Alexander Wang</b> <br/> Music and Technology MS student <br/> Now Researcher @ Michigan CS" link="https://ayw0.github.io/">}}
 
         ## Supporters
         The G-CLef lab is supported by generous contributions from:
