@@ -16,6 +16,12 @@ sections:
     content:
       title: News
       text: |-
+        - 📜 (Oct 2024) Launch of [Copilot Arena](https://x.com/lmarena_ai/status/1846604894402498766), a VSCode extension for evaluating LLM backbones for coding assistance.
+        - 📜 (Oct 2024) Three extended abstracts accepted to ISMIR Late Breaking Demo track.
+        - 📜 (Oct 2024) One paper accepted at the [NeurIPS 2024 Audio Imagination Workshop](https://www.audio-imagination.com/).
+        - 🎤 (Oct 2024) Invited talk at [SANE 2024](https://www.saneworkshop.org/sane2024/).
+        - 🌐 (Aug 2024) Official launch of [Hookpad Aria](https://www.hooktheory.com/hookpad/aria), a Copilot for songwriters.
+        - 📜 (Jun 2024) Our work on [Music-aware Virtual Assistants](https://dl.acm.org/doi/pdf/10.1145/3654777.3676416) accepted at UIST 2024.
         - 📜 (Jun 2024) Two papers accepted to ISMIR 2024.
         - 🪑 (Apr 2024) Named as the [Dannenberg](https://www.cs.cmu.edu/~rbd/) Assistant Professor of Computer Science.
         - 🛎️ (Apr 2024) Serving as Senior Program Committee Co-chair for ISMIR 2024 - record number of submissions (415).
@@ -31,7 +37,6 @@ sections:
         - 🧑‍🏫 (Oct 2023) Guest lecture for [CMU LLM Course](https://cmu-llms.org/) ([slides](https://docs.google.com/presentation/d/1AS10aoPDCNjDAaHFYi2yHDm41HF7NyP5r5Vvr7nzp5k/edit))
         - 👋 (Oct 2023) New PhD students: Irmak Bukey and Wayne Chi
         - 🧑‍🏫 (Sep 2023) Started as Assistant Professor at CMU
-        - 📜 (Jun 2023) New preprint led by [John Thickstun](https://johnthickstun.com/): [Anticipatory Music Transformer](https://arxiv.org/abs/2306.08620)
     design:
       columns: "2"
   - block: markdown
