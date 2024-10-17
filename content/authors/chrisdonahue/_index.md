@@ -128,6 +128,8 @@ highlight_name: true
 
 I am an **Assistant Professor in the [Computer Science Department](https://csd.cmu.edu/) at Carnegie Mellon University**, and also a **Research Scientist at Google DeepMind on the [Magenta](https://magenta.tensorflow.org) team** (part-time).
 
+I am **recruiting PhD students for Fall 2025**. If you are interested, please **apply to the [CMU Computer Science Department PhD program](https://csd.cmu.edu/academics/doctoral/admissions) by December 11th**. Check back here in early November for additional information about applying.
+
 My research goal is to **develop and responsibly deploy generative AI for music and creativity, thereby unlocking and augmenting human creative potential**. To this end, my work involves (1) improving machine learning methods for controllable generative modeling for music, audio, and other sequential data, and (2) deploying real-world interactive systems that allow a broader audience&#8212;inclusive of non-musicians&#8212;to harness generative music AI through intuitive controls. 
 
 I am particularly drawn to research ideas with direct real-world applications, and my work often involves building systems for real users to be evaluated in-the-wild. For example, my work on [Piano Genie](https://magenta.tensorflow.org/pianogenie) was used in a [live performance by The Flaming Lips](https://magenta.tensorflow.org/fruitgenie), and my work on [Dance Dance Convolution](https://www.theverge.com/2017/3/24/15047328/dance-dance-revolution-ai-neural-network-choreography) powers [Beat Sage](https://beatsage.com/), a live service used by thousands of users a day to create multimodal music game content.
