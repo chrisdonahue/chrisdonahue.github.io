@@ -16,10 +16,10 @@ sections:
     content:
       title: News
       text: |-
-        - 📜 (Oct 2024) Launch of [Copilot Arena](https://x.com/lmarena_ai/status/1846604894402498766), a VSCode extension for evaluating LLM backbones for coding assistance.
-        - 📜 (Oct 2024) Three extended abstracts accepted to ISMIR Late Breaking Demo track.
-        - 📜 (Oct 2024) One paper accepted at the [NeurIPS 2024 Audio Imagination Workshop](https://www.audio-imagination.com/).
         - 🎤 (Oct 2024) Invited talk at [SANE 2024](https://www.saneworkshop.org/sane2024/).
+        - 📜 (Oct 2024) Launch of [Copilot Arena](https://x.com/lmarena_ai/status/1846604894402498766), a VSCode extension for evaluating LLMs for coding assistance.
+        - 📜 (Oct 2024) Three extended abstracts to appear at ISMIR Late Breaking Demos.
+        - 📜 (Oct 2024) One paper accepted at the [NeurIPS 2024 Audio Imagination Workshop](https://www.audio-imagination.com/).
         - 🌐 (Aug 2024) Official launch of [Hookpad Aria](https://www.hooktheory.com/hookpad/aria), a Copilot for songwriters.
         - 📜 (Jun 2024) Our work on [Music-aware Virtual Assistants](https://dl.acm.org/doi/pdf/10.1145/3654777.3676416) accepted at UIST 2024.
         - 📜 (Jun 2024) Two papers accepted to ISMIR 2024.
