@@ -46,7 +46,7 @@ sections:
       subtitle: |-
         {{< figure src="gclef-logo.png" lightbox="false" max_width="250px" theme="light" alt="Our group's logo, a mashup of a treble clef (G-Clef) and CMU's mascot Scotty created with DALL-E 2." >}}
       text: |-
-        I lead the **Generative Creativity Lab** (G-CLef) at CMU. Our research focuses on the development and deployment of generative AI towards augmenting human creativity. We primarily focus on musical creativity as an application domain but also explore other areas such as gaming.
+        I lead the **Generative Creativity Lab** (G-CLef) at CMU. Our mission is to *empower and enrich human creativity with generative AI*. We focus primarily on the intersection of *music and AI*, though we also work on other applications such as code, gaming, and language. Please [visit this page](https://github.com/gclef-cmu/apply/) to learn more about our research interests and to apply.
 
         ## PhD students
         {{< figure class="student-avi" src="group/irmak.jpeg" lightbox="false" max_width="150px" caption="<b>Irmak Bukey</b> <br/>CSD PhD student <br/><br/>" >}}
