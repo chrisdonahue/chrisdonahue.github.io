@@ -128,7 +128,7 @@ highlight_name: true
 
 I am an **Assistant Professor in the [Computer Science Department](https://csd.cmu.edu/) at Carnegie Mellon University**, and also a **Research Scientist at Google DeepMind on the [Magenta](https://magenta.tensorflow.org) team** (part-time).
 
-I am **recruiting PhD students for Fall 2025**. If you are interested, please **apply to the [CMU Computer Science Department PhD program](https://csd.cmu.edu/academics/doctoral/admissions) by December 11th**. Check back here in early November for additional information about applying.
+I am **recruiting PhD students for Fall 2025**. If you are interested, [please see this page](https://github.com/gclef-cmu/apply/) for more information about submitting an application.
 
 My research goal is to **develop and responsibly deploy generative AI for music and creativity, thereby unlocking and augmenting human creative potential**. To this end, my work involves (1) improving machine learning methods for controllable generative modeling for music, audio, and other sequential data, and (2) deploying real-world interactive systems that allow a broader audience&#8212;inclusive of non-musicians&#8212;to harness generative music AI through intuitive controls. 
 
