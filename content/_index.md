@@ -16,7 +16,9 @@ sections:
     content:
       title: News
       text: |-
-        - 🎤 (Oct 2024) Invited talk at [SANE 2024](https://www.saneworkshop.org/sane2024/).
+        - 🎤 (Jan 2025) Our work on [AMUSE](https://arxiv.org/abs/2412.18940) accepted to CHI 2025.
+        - 📜 (Nov 2024) One paper accepted at the [NeurIPS 2024 Open World Agents Workshop](https://sites.google.com/view/open-world-agents/home).
+        - 🎤 (Oct 2024) Invited talk at [SANE 2024](https://www.saneworkshop.org/sane2024/) ([video](https://youtu.be/K_VimNeSKJ8), [slides](https://drive.google.com/file/d/1wHKwhYpBGkWpIOZ1MT5TOzeVXsqHmtr6/view?usp=drive_link)).
         - 📜 (Oct 2024) Launch of [Copilot Arena](https://x.com/lmarena_ai/status/1846604894402498766), a VSCode extension for evaluating LLMs for coding assistance.
         - 📜 (Oct 2024) Three extended abstracts to appear at ISMIR Late Breaking Demos.
         - 📜 (Oct 2024) One paper accepted at the [NeurIPS 2024 Audio Imagination Workshop](https://www.audio-imagination.com/).
@@ -46,20 +48,19 @@ sections:
       subtitle: |-
         {{< figure src="gclef-logo.png" lightbox="false" max_width="250px" theme="light" alt="Our group's logo, a mashup of a treble clef (G-Clef) and CMU's mascot Scotty created with DALL-E 2." >}}
       text: |-
-        I lead the **Generative Creativity Lab** (G-CLef) at CMU. Our mission is to *empower and enrich human creativity with generative AI*. We focus primarily on the intersection of *music and AI*, though we also work on other applications such as code, gaming, and language. Please [visit this page](https://github.com/gclef-cmu/apply/) to learn more about our research interests and to apply.
+        I lead the **Generative Creativity Lab** (G-CLef) at CMU. Our mission is to *empower and enrich _human_ creativity and productivity with generative AI*. We focus primarily on the intersection of *music and AI*, though we also work on other applications such as programming, gaming, and natural language. Please [visit this page](https://github.com/gclef-cmu/apply/) to learn more about our research interests and to apply. 
 
-        ## PhD students
+        ## Mentees
         {{< figure class="student-avi" src="group/irmak.jpeg" lightbox="false" max_width="150px" caption="<b>Irmak Bukey</b> <br/>CSD PhD student <br/><br/>" >}}
-        {{< figure class="student-avi" src="group/wayne.jpeg" lightbox="false" max_width="150px" caption="<b>Wayne Chi</b> <br/> CSD PhD student <br/> Coadvised w/ <a href='https://www.cs.cmu.edu/~atalwalk/'>Ameet Talwalkar</a>" link="https://waynechi.com" >}}
-
-        ## Visitors and affiliates
-        {{< figure class="student-avi" src="group/yewon.jpeg" lightbox="false" max_width="150px" caption="<b>Yewon Kim</b> <br/> Visiting researcher, KAIST" link="https://yewon-kim.com/" >}}
-        {{< figure class="student-avi" src="group/will.jpeg" lightbox="false" max_width="150px" caption="<b>Yichen (William) Huang</b> <br/> Visiting researcher" link="https://www.yichenwilliamhuang.com/" >}}
-        {{< figure class="student-avi" src="group/michael.jpeg" lightbox="false" max_width="150px" caption="<b>Michael Feffer</b> <br/> S3D PhD student" link="https://mfeffer.github.io">}}
+        {{< figure class="student-avi" src="group/wayne.jpeg" lightbox="false" max_width="150px" caption="<b>Wayne Chi</b> <br/> CSD PhD student <br/> Coadvised w/ <a href='https://www.cs.cmu.edu/~atalwalk/'>Ameet T.</a>" link="https://waynechi.com" >}}
+        {{< figure class="student-avi" src="group/will.jpeg" lightbox="false" max_width="150px" caption="<b>Yichen (William) Huang</b> <br/> Visiting researcher <br/><br/>" link="https://www.yichenwilliamhuang.com/" >}}
+        {{< figure class="student-avi" src="group/satvik.jpeg" lightbox="false" max_width="150px" caption="<b>Satvik Dixit</b> <br/> ECE MS student <br/><br/>" link="https://satvik-dixit.github.io/" >}}
 
         ## Alumni
-        {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="150px" caption="<b>Shih-Lun Wu</b> <br/> LTI MS student <br/> Now PhD @ MIT EECS" link="https://slseanwu.github.io/" >}}
-        {{< figure class="student-avi" src="group/alex.jpeg" lightbox="false" max_width="150px" caption="<b>Alexander Wang</b> <br/> Music and Technology MS student <br/> Now Researcher @ Michigan CS" link="https://ayw0.github.io/">}}
+        {{< figure class="student-avi" src="group/rick.jpeg" lightbox="false" max_width="100px" caption="<b>Xun (Rick) Zhou</b> <br/> CS MS student<br/>Now Quant @ Minhong" >}}
+        {{< figure class="student-avi" src="group/yewon.jpeg" lightbox="false" max_width="100px" caption="<b>Yewon Kim</b> <br/> Visiting researcher, KAIST<br/>Now PhD @ KAIST" link="https://yewon-kim.com/" >}}
+        {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="100px" caption="<b>Shih-Lun Wu</b> <br/> LTI MS student <br/> Now PhD @ MIT EECS" link="https://slseanwu.github.io/" >}}
+        {{< figure class="student-avi" src="group/alex.jpeg" lightbox="false" max_width="100px" caption="<b>Alexander Wang</b> <br/> Music Tech MS student <br/> Now Researcher @ Michigan CS" link="https://ayw0.github.io/">}}
 
         ## Supporters
         The G-CLef lab is supported by generous contributions from:
