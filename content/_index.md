@@ -16,6 +16,7 @@ sections:
     content:
       title: News
       text: |-
+        - 📜 (Feb 2025) New pre-print on [Copilot Arena](https://arxiv.org/abs/2502.09328)
         - 📜 (Jan 2025) Our work on [AMUSE](https://arxiv.org/abs/2412.18940) accepted to CHI 2025.
         - 🗞️ (Nov 2024) Blog post on [Copilot Arena](https://blog.lmarena.ai/blog/2024/copilot-arena/)
         - 📜 (Nov 2024) One paper accepted at the [NeurIPS 2024 Open World Agents Workshop](https://sites.google.com/view/open-world-agents/home).
