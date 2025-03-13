@@ -16,6 +16,7 @@ sections:
     content:
       title: News
       text: |-
+        - 📜 (Mar 2025) Paper accepted at the NAACL Student Research Workshop 2025.
         - 🎶 (Mar 2025) [Shoutout from Darkside](https://www.instagram.com/darksidetheband/p/DGoaAIhS4q8/?img_index=1) for helping them train [RAVE](https://github.com/acids-ircam/RAVE) for their album [*Nothing*](https://matadorrecords.com/products/ole2115-nothing).
         - 📜 (Feb 2025) Our work on [VERSA](https://arxiv.org/abs/2412.17667) accepted to NAACL Demo Track 2025.
         - 📜 (Feb 2025) New pre-print on [Copilot Arena](https://arxiv.org/abs/2502.09328)
