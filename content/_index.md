@@ -16,6 +16,7 @@ sections:
     content:
       title: News
       text: |-
+        - 🏅 (Mar 2025) **Our paper on [AMUSE](https://arxiv.org/abs/2412.18940) recognized with a Best Paper Award (top 1% of submissions) at CHI 2025.**
         - 📜 (Mar 2025) Paper accepted at the NAACL Student Research Workshop 2025.
         - 🎶 (Mar 2025) [Shoutout from Darkside](https://www.instagram.com/darksidetheband/p/DGoaAIhS4q8/?img_index=1) for helping them train [RAVE](https://github.com/acids-ircam/RAVE) for their album [*Nothing*](https://matadorrecords.com/products/ole2115-nothing).
         - 📜 (Feb 2025) Our work on [VERSA](https://arxiv.org/abs/2412.17667) accepted to NAACL Demo Track 2025.
