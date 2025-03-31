@@ -59,12 +59,12 @@ sections:
         ## Mentees
         {{< figure class="student-avi" src="group/irmak.jpeg" lightbox="false" max_width="150px" caption="<b>Irmak Bukey</b> <br/>CSD PhD student <br/><br/>" >}}
         {{< figure class="student-avi" src="group/wayne.jpeg" lightbox="false" max_width="150px" caption="<b>Wayne Chi</b> <br/> CSD PhD student <br/> Coadvised w/ <a href='https://www.cs.cmu.edu/~atalwalk/'>Ameet T.</a>" link="https://waynechi.com" >}}
-        {{< figure class="student-avi" src="group/will.jpeg" lightbox="false" max_width="150px" caption="<b>Yichen (William) Huang</b> <br/> Visiting researcher <br/><br/>" link="https://www.yichenwilliamhuang.com/" >}}
+        {{< figure class="student-avi" src="group/yewon.jpeg" lightbox="false" max_width="150px" caption="<b>Yewon Kim</b> <br/> CSD PhD (incoming) <br/><br/>" link="https://yewon-kim.com/" >}}
         {{< figure class="student-avi" src="group/satvik.jpeg" lightbox="false" max_width="150px" caption="<b>Satvik Dixit</b> <br/> ECE MS student <br/><br/>" link="https://satvik-dixit.github.io/" >}}
 
         ## Alumni
+        {{< figure class="student-avi" src="group/will.jpeg" lightbox="false" max_width="100px" caption="<b>Yichen (William) Huang</b> <br/> Visiting researcher <br/><br/>" link="https://www.yichenwilliamhuang.com/" >}}
         {{< figure class="student-avi" src="group/rick.jpeg" lightbox="false" max_width="100px" caption="<b>Xun (Rick) Zhou</b> <br/> CS MS student<br/>Now Quant @ Minhong" >}}
-        {{< figure class="student-avi" src="group/yewon.jpeg" lightbox="false" max_width="100px" caption="<b>Yewon Kim</b> <br/> Visiting researcher, KAIST<br/>Now PhD @ KAIST" link="https://yewon-kim.com/" >}}
         {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="100px" caption="<b>Shih-Lun Wu</b> <br/> LTI MS student <br/> Now PhD @ MIT EECS" link="https://slseanwu.github.io/" >}}
         {{< figure class="student-avi" src="group/alex.jpeg" lightbox="false" max_width="100px" caption="<b>Alexander Wang</b> <br/> Music Tech MS student <br/> Now Researcher @ Michigan CS" link="https://ayw0.github.io/">}}
 
