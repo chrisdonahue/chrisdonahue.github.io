@@ -69,7 +69,7 @@ sections:
         {{< figure class="student-avi" src="group/will.jpeg" lightbox="false" max_width="100px" caption="<b>Yichen (William) Huang</b> <br/> Visiting researcher <br/><br/>" link="https://www.yichenwilliamhuang.com/" >}}
         {{< figure class="student-avi" src="group/rick.jpeg" lightbox="false" max_width="100px" caption="<b>Xun (Rick) Zhou</b> <br/> CS MS student<br/>Now Quant @ Minhong" >}}
         {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="100px" caption="<b>Shih-Lun Wu</b> <br/> LTI MS student <br/> Now PhD @ MIT EECS" link="https://slseanwu.github.io/" >}}
-        {{< figure class="student-avi" src="group/alex.jpeg" lightbox="false" max_width="100px" caption="<b>Alexander Wang</b> <br/> Music Tech MS student <br/> Now Researcher @ Michigan CS" link="https://ayw0.github.io/">}}
+        {{< figure class="student-avi" src="group/alex.jpeg" lightbox="false" max_width="100px" caption="<b>Alexander Wang</b> <br/> Music Tech MS student <br/> Now PhD @ CMU HCII (incoming)" link="https://ayw0.github.io/">}}
 
         ## Supporters
         The G-CLef lab is supported by generous contributions from:
