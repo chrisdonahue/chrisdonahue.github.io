@@ -59,9 +59,10 @@ sections:
         I lead the **Generative Creativity Lab** (G-CLef) at CMU. Our mission is to *empower and enrich _human_ creativity and productivity with generative AI*. We focus primarily on the intersection of *music and AI*, though we also work on other applications such as programming, gaming, and natural language. Please [visit this page](https://github.com/gclef-cmu/apply/) to learn more about our research interests and to apply. 
 
         ## Mentees
-        {{< figure class="student-avi" src="group/irmak.jpeg" lightbox="false" max_width="150px" caption="<b>Irmak Bukey</b> <br/>CSD PhD student <br/><br/>" >}}
+        {{< figure class="student-avi" src="group/irmak.jpeg" lightbox="false" max_width="150px" caption="<b>Irmak Bukey</b> <br/>CSD PhD student <br/><br/>" link="https://irmakbky.github.io" >}}
         {{< figure class="student-avi" src="group/wayne.jpeg" lightbox="false" max_width="150px" caption="<b>Wayne Chi</b> <br/> CSD PhD student <br/> Coadvised w/ <a href='https://www.cs.cmu.edu/~atalwalk/'>Ameet T.</a>" link="https://waynechi.com" >}}
         {{< figure class="student-avi" src="group/yewon.jpeg" lightbox="false" max_width="150px" caption="<b>Yewon Kim</b> <br/> CSD PhD (incoming) <br/><br/>" link="https://yewon-kim.com/" >}}
+        {{< figure class="student-avi" src="group/nathan.jpeg" lightbox="false" max_width="150px" caption="<b>Nathan Pruyne</b> <br/> CSD PhD (incoming) <br/><br/>" link="https://nathanpruyne.com" >}}
         {{< figure class="student-avi" src="group/satvik.jpeg" lightbox="false" max_width="150px" caption="<b>Satvik Dixit</b> <br/> ECE MS student <br/><br/>" link="https://satvik-dixit.github.io/" >}}
 
         ## Alumni
