@@ -17,6 +17,7 @@ sections:
       title: News
       text: |-
         - 🎓 (Apr 2025) My PhD student [Wayne Chi](https://www.waynechi.com/) (co-advised w/ [Ameet Talwalkar](https://www.cs.cmu.edu/~atalwalk/)) has received the NDSEG Fellowship.
+        - 🎶 (Mar 2025) Project proposal w/ [Annie Hsieh (CMU CFA)](https://www.cmu.edu/cfa/music/people/Bios/hsieh_annie.html) funded by the [AIxArts incubator fund at CMU](https://www.cmu.edu/cfa/faculty-and-staff/faculty/aixarts-incubator-fund.html).
         - 🏅 (Mar 2025) **Our paper on [AMUSE](https://arxiv.org/abs/2412.18940) recognized with a Best Paper Award (top 1% of submissions) at CHI 2025.**
         - 📜 (Mar 2025) Paper accepted at the NAACL Student Research Workshop 2025.
         - 🎶 (Mar 2025) [Shoutout from Darkside](https://www.instagram.com/darksidetheband/p/DGoaAIhS4q8/?img_index=1) for helping them train [RAVE](https://github.com/acids-ircam/RAVE) for their album [*Nothing*](https://matadorrecords.com/products/ole2115-nothing).
