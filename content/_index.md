@@ -28,7 +28,7 @@ sections:
         - 🗞️ (Nov 2024) Blog post on [Copilot Arena](https://blog.lmarena.ai/blog/2024/copilot-arena/)
         - 📜 (Nov 2024) One paper accepted at the [NeurIPS 2024 Open World Agents Workshop](https://sites.google.com/view/open-world-agents/home).
         - 🎤 (Oct 2024) Invited talk at [SANE 2024](https://www.saneworkshop.org/sane2024/) ([video](https://youtu.be/K_VimNeSKJ8), [slides](https://drive.google.com/file/d/1wHKwhYpBGkWpIOZ1MT5TOzeVXsqHmtr6/view?usp=drive_link)).
-        - 📜 (Oct 2024) Launch of [Copilot Arena](https://x.com/lmarena_ai/status/1846604894402498766), a VSCode extension for evaluating LLMs for coding assistance.
+        - 🌐 (Oct 2024) Launch of [Copilot Arena](https://x.com/lmarena_ai/status/1846604894402498766), a VSCode extension for evaluating LLMs for coding assistance.
         - 📜 (Oct 2024) Three extended abstracts to appear at ISMIR Late Breaking Demos.
         - 📜 (Oct 2024) One paper accepted at the [NeurIPS 2024 Audio Imagination Workshop](https://www.audio-imagination.com/).
         - 🌐 (Aug 2024) Official launch of [Hookpad Aria](https://www.hooktheory.com/hookpad/aria), a Copilot for songwriters.
