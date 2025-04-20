@@ -16,6 +16,7 @@ sections:
     content:
       title: News
       text: |-
+        - 🏅 (Apr 2025) **Our paper on [co-design for codec LMs](https://chrisdonahue.com/Wu2025CodecLMCodesign.pdf) received the Best Paper Award (top 1) at the NAACL Student Research Workshop 2025.**
         - 🎓 (Apr 2025) My PhD student [Wayne Chi](https://www.waynechi.com/) (co-advised w/ [Ameet Talwalkar](https://www.cs.cmu.edu/~atalwalk/)) has received the NDSEG Fellowship.
         - 📜 (Mar 2025) Paper on Copilot Arena accepted to the [HEAL@CHI](https://heal-workshop.github.io/) workshop.
         - 🎶 (Mar 2025) Project proposal w/ [Annie Hsieh (CMU CFA)](https://www.cmu.edu/cfa/music/people/Bios/hsieh_annie.html) funded by the [AIxArts incubator fund at CMU](https://www.cmu.edu/cfa/faculty-and-staff/faculty/aixarts-incubator-fund.html).
