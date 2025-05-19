@@ -16,6 +16,7 @@ sections:
     content:
       title: News
       text: |-
+        - 🗞️ (May 2025) My PhD student [Wayne Chi](https://www.waynechi.com/) (co-advised w/ [Ameet Talwalkar](https://www.cs.cmu.edu/~atalwalk/)) quoted in [WSJ article](https://www.wsj.com/articles/openai-launches-new-ai-coding-agent-c8dabc60).
         - 🗞️ (Apr 2025) [CMU SCS news article featuring Copilot Arena](https://www.cs.cmu.edu/news/2025/copilot-arena).
         - 🏅 (Apr 2025) **Our paper on [co-design for audio codec LMs](https://aclanthology.org/2025.naacl-srw.6) received the Best Paper Award (top 1) at the NAACL Student Research Workshop 2025.**
         - 🎓 (Apr 2025) My PhD student [Wayne Chi](https://www.waynechi.com/) (co-advised w/ [Ameet Talwalkar](https://www.cs.cmu.edu/~atalwalk/)) has received the NDSEG Fellowship.
