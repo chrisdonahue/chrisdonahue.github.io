@@ -16,7 +16,11 @@ sections:
     content:
       title: News
       text: |-
-        - 📜 (June 2025) Two papers accepted to ISMIR 2025 on [music evaluation](https://arxiv.org/abs/2503.16669) and real-time adaptation (pre-print forthcoming).
+        - 📜 (July 2025) Paper accepted at WASPAA 2025 on [sound morphing](https://arxiv.org/pdf/2506.01588).
+        - 📜 (July 2025) Two papers accepted to ISMIR 2025 on [music evaluation](https://arxiv.org/abs/2503.16669) and real-time adaptation (pre-print forthcoming).
+        - 📜 (June 2025) Two papers accepted at ICML 2025 workshops (R2-FM, DataWorld, pre-prints forthcoming).
+        - 🌐 (June 2025) Led the effort of a new open weights real-time music generation model along with my team at Google DeepMind: [Magenta RealTime](https://magenta.withgoogle.com/magenta-realtime).
+        - 📜 (May 2025) Our paper on [Copilot Arena](https://openreview.net/forum?id=9bYOqwtAud) accepted to ICML 2025.
         - 🗞️ (May 2025) My PhD student [Wayne Chi](https://www.waynechi.com/) (co-advised w/ [Ameet Talwalkar](https://www.cs.cmu.edu/~atalwalk/)) quoted in [WSJ article](https://www.wsj.com/articles/openai-launches-new-ai-coding-agent-c8dabc60).
         - 🗞️ (Apr 2025) [CMU SCS news article featuring Copilot Arena](https://www.cs.cmu.edu/news/2025/copilot-arena).
         - 🏅 (Apr 2025) **Our paper on [co-design for audio codec LMs](https://aclanthology.org/2025.naacl-srw.6) received the Best Paper Award (top 1) at the NAACL Student Research Workshop 2025.**
