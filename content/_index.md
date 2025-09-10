@@ -16,6 +16,7 @@ sections:
     content:
       title: News
       text: |-
+        - 📜 (Sep 2025) [Paper](https://arxiv.org/abs/2505.12863) accepted to the LLM4Music workshop @ ISMIR 2025
         - 🌐 (July 2025) [Music Arena](https://music-arena.org) released ([paper](https://arxiv.org/abs/2507.20900))!
         - 📜 (July 2025) Paper accepted at WASPAA 2025 on [sound morphing](https://arxiv.org/pdf/2506.01588).
         - 📜 (July 2025) Two papers accepted to ISMIR 2025 on [music evaluation](https://arxiv.org/abs/2503.16669) and real-time adaptation (pre-print forthcoming).
