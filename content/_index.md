@@ -16,12 +16,17 @@ sections:
     content:
       title: News
       text: |-
+        - 🎤 (Dec 2025) Two invited talks at NeurIPS 2025 Workshops: [GenProCC](https://genprocc.github.io/) and [AI4Music](https://aiformusicworkshop.github.io/)
+        - 🧑‍🏫 (Nov 2025) Reappointed as Assistant Professor at CMU.
+        - 🎤 (Oct 2025) Invited talk *What music can teach language models*, CMU LTI Colloquium ([recording](https://mediaservices.cmu.edu/media/LTI+Colloquium%3A+Chris+Donahue/1_0q38mj6k))
+        - 📜 (Sep 2025) Two papers ([Music Arena](https://arxiv.org/abs/2507.20900), [Live Music Models](https://arxiv.org/abs/2508.04651)) accepted to NeurIPS 2025 Creative AI Track, to be presented in the main conference.
         - 📜 (Sep 2025) [Paper](https://arxiv.org/abs/2505.12863) accepted to the LLM4Music workshop @ ISMIR 2025
-        - 🌐 (July 2025) [Music Arena](https://music-arena.org) released ([paper](https://arxiv.org/abs/2507.20900))!
-        - 📜 (July 2025) Paper accepted at WASPAA 2025 on [sound morphing](https://arxiv.org/pdf/2506.01588).
-        - 📜 (July 2025) Two papers accepted to ISMIR 2025 on [music evaluation](https://arxiv.org/abs/2503.16669) and real-time adaptation (pre-print forthcoming).
-        - 📜 (June 2025) Two papers accepted at ICML 2025 workshops (R2-FM, DataWorld, pre-prints forthcoming).
-        - 🌐 (June 2025) Led the effort of a new open weights real-time music generation model along with my team at Google DeepMind: [Magenta RealTime](https://magenta.withgoogle.com/magenta-realtime).
+        - 🌐 (Aug 2025) My Google research project [SingSong](https://arxiv.org/abs/2301.12662) featured in the [Pixel Recorder app](https://9to5google.com/2025/08/20/pixel-10-journal-app/)
+        - 🌐 (Jul 2025) [Music Arena](https://music-arena.org) released ([paper](https://arxiv.org/abs/2507.20900))!
+        - 📜 (Jul 2025) Paper accepted at WASPAA 2025 on [sound morphing](https://arxiv.org/pdf/2506.01588).
+        - 📜 (Jul 2025) Two papers accepted to ISMIR 2025 on [music evaluation](https://arxiv.org/abs/2503.16669) and real-time adaptation (pre-print forthcoming).
+        - 📜 (Jun 2025) Two papers accepted at ICML 2025 workshops (R2-FM, DataWorld, pre-prints forthcoming).
+        - 🌐 (Jun 2025) Led the effort of a new open weights real-time music generation model along with my team at Google DeepMind: [Magenta RealTime](https://magenta.withgoogle.com/magenta-realtime).
         - 📜 (May 2025) Our paper on [Copilot Arena](https://openreview.net/forum?id=9bYOqwtAud) accepted to ICML 2025.
         - 🗞️ (May 2025) My PhD student [Wayne Chi](https://www.waynechi.com/) (co-advised w/ [Ameet Talwalkar](https://www.cs.cmu.edu/~atalwalk/)) quoted in [WSJ article](https://www.wsj.com/articles/openai-launches-new-ai-coding-agent-c8dabc60).
         - 🗞️ (Apr 2025) [CMU SCS news article featuring Copilot Arena](https://www.cs.cmu.edu/news/2025/copilot-arena).
