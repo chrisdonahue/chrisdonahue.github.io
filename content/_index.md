@@ -73,27 +73,19 @@ sections:
       subtitle: |-
         {{< figure src="gclef-logo.png" lightbox="false" max_width="250px" theme="light" alt="Our group's logo, a mashup of a treble clef (G-Clef) and CMU's mascot Scotty created with DALL-E 2." >}}
       text: |-
-        I lead the **Generative Creativity Lab** (G-CLef) at CMU. Our mission is to *empower and enrich _human_ creativity and productivity with generative AI*. We focus primarily on the intersection of *music and AI*, though we also work on other applications such as programming, gaming, and natural language. Please [visit this page](https://github.com/gclef-cmu/apply/) to learn more about our research interests and to apply. 
+        I lead the [**Generative Creativity Lab** (G-CLef) at CMU](https://gclef-cmu.org/). Our mission is to *empower and enrich _human_ creativity and productivity with generative AI*. We focus primarily on the intersection of *music and AI*, though we also work on other applications such as programming, gaming, and natural language. Please [visit this page](https://github.com/gclef-cmu/apply/) to learn more about our research interests and to apply. 
 
         ## Mentees
         {{< figure class="student-avi" src="group/irmak.jpeg" lightbox="false" max_width="150px" caption="<b>Irmak Bukey</b> <br/>CSD PhD student <br/><br/>" link="https://irmakbky.github.io" >}}
         {{< figure class="student-avi" src="group/wayne.jpeg" lightbox="false" max_width="150px" caption="<b>Wayne Chi</b> <br/> CSD PhD student <br/> Coadvised w/ <a href='https://www.cs.cmu.edu/~atalwalk/'>Ameet T.</a>" link="https://waynechi.com" >}}
-        {{< figure class="student-avi" src="group/yewon.jpeg" lightbox="false" max_width="150px" caption="<b>Yewon Kim</b> <br/> CSD PhD (incoming) <br/><br/>" link="https://yewon-kim.com/" >}}
-        {{< figure class="student-avi" src="group/nathan.jpeg" lightbox="false" max_width="150px" caption="<b>Nathan Pruyne</b> <br/> CSD PhD (incoming) <br/><br/>" link="https://nathanpruyne.com" >}}
-        {{< figure class="student-avi" src="group/satvik.jpeg" lightbox="false" max_width="150px" caption="<b>Satvik Dixit</b> <br/> ECE MS student <br/><br/>" link="https://satvik-dixit.github.io/" >}}
+        {{< figure class="student-avi" src="group/yewon.jpeg" lightbox="false" max_width="150px" caption="<b>Yewon Kim</b> <br/> CSD PhD student <br/><br/>" link="https://yewon-kim.com/" >}}
+        {{< figure class="student-avi" src="group/nathan.jpeg" lightbox="false" max_width="150px" caption="<b>Nathan Pruyne</b> <br/> CSD PhD student <br/><br/>" link="https://nathanpruyne.com" >}}
 
         ## Alumni
         {{< figure class="student-avi" src="group/alex.jpeg" lightbox="false" max_width="100px" caption="<b>Alexander Wang</b> <br/> Music Tech MS student <br/> Now PhD @ CMU HCII (incoming)" link="https://ayw0.github.io/">}}
         {{< figure class="student-avi" src="group/will.jpeg" lightbox="false" max_width="100px" caption="<b>Yichen (William) Huang</b> <br/> Visiting researcher <br/><br/>" link="https://www.yichenwilliamhuang.com/" >}}
         {{< figure class="student-avi" src="group/rick.jpeg" lightbox="false" max_width="100px" caption="<b>Xun (Rick) Zhou</b> <br/> CS MS student<br/>Now Quant @ Minhong" >}}
         {{< figure class="student-avi" src="group/shih-lun.jpeg" lightbox="false" max_width="100px" caption="<b>Shih-Lun Wu</b> <br/> LTI MS student <br/> Now PhD @ MIT EECS" link="https://slseanwu.github.io/" >}}
-
-        ## Supporters
-        The G-CLef lab is supported by generous contributions from:
-        [{{< figure class="supporter-logo" src="supporters/sony-ai.png" lightbox="false" max_width="200px" >}}](https://ai.sony/)
-        [{{< figure class="supporter-logo" src="supporters/adobe.png" lightbox="false" max_width="200px" >}}](https://research.adobe.com/)
-        [{{< figure class="supporter-logo" src="supporters/hooktheory.png" lightbox="false" max_width="200px" >}}](https://www.hooktheory.com/)
-        [{{< figure class="supporter-logo" src="supporters/klab.png" lightbox="false" max_width="200px" >}}](https://www.klab.com/)
 
     design:
       columns: "2"
