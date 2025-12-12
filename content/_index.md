@@ -16,7 +16,8 @@ sections:
     content:
       title: News
       text: |-
-        - 🎤 (Dec 2025) Two invited talks at NeurIPS 2025 Workshops: [GenProCC](https://genprocc.github.io/) and [AI4Music](https://aiformusicworkshop.github.io/)
+        - 🎶 (Dec 2025) Our project on *multimodal music AI*, co-led by [Dr. Annie Hsieh](https://www.cmu.edu/cfa/music/people/Bios/hsieh_annie.html), was awarded a grant through the [Schmidt HAVI](https://www.schmidtsciences.org/humanities-and-ai-virtual-institute/) program
+        - 🎤 (Dec 2025) Two invited talks at NeurIPS 2025 Workshops: [GenProCC](https://genprocc.github.io/) ([recording](https://neurips.cc/virtual/2025/loc/san-diego/workshop/109545)) and [AI4Music](https://aiformusicworkshop.github.io/) ([recording](https://neurips.cc/virtual/2025/loc/san-diego/workshop/109534))
         - 🧑‍🏫 (Nov 2025) Reappointed as Assistant Professor at CMU.
         - 🎤 (Oct 2025) Invited talk *What music can teach language models*, CMU LTI Colloquium ([recording](https://mediaservices.cmu.edu/media/LTI+Colloquium%3A+Chris+Donahue/1_0q38mj6k))
         - 📜 (Sep 2025) Two papers ([Music Arena](https://arxiv.org/abs/2507.20900), [Live Music Models](https://arxiv.org/abs/2508.04651)) accepted to NeurIPS 2025 Creative AI Track, to be presented in the main conference.
