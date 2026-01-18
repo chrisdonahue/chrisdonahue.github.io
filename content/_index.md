@@ -16,6 +16,8 @@ sections:
     content:
       title: News
       text: |-
+        - 📜 (Jan 2026) Two papers accepted at ICASSP 2026 including [FoleyBench](https://arxiv.org/abs/2511.13219).
+        - 📜 (Jan 2026) One paper accepted at CHI 2026, preprint forthcoming.
         - 📜 (Dec 2025) Paper on multi-modal translation for music AI was published in [TASLP](https://ieeexplore.ieee.org/document/11316398/authors#authors)
         - 🎶 (Dec 2025) Our project on *multimodal music AI*, co-led by [Dr. Annie Hsieh](https://www.cmu.edu/cfa/music/people/Bios/hsieh_annie.html), was awarded a grant through the [Schmidt HAVI](https://www.schmidtsciences.org/humanities-and-ai-virtual-institute/) program
         - 🎤 (Dec 2025) Two invited talks at NeurIPS 2025 Workshops: [GenProCC](https://genprocc.github.io/) ([recording](https://neurips.cc/virtual/2025/loc/san-diego/workshop/109545)) and [AI4Music](https://aiformusicworkshop.github.io/) ([recording](https://neurips.cc/virtual/2025/loc/san-diego/workshop/109534))
