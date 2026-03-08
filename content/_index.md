@@ -16,9 +16,11 @@ sections:
     content:
       title: News
       text: |-
+        - 📜 (Feb 2026) New preprint on [GameDevBench](https://arxiv.org/abs/2602.11103).
+        - 🏅 (Feb 2026) **[EDIT-Bench](https://arxiv.org/abs/2511.04486) selected for oral presentation at ICLR 2026.**
         - 🗞️ (Jan 2026) Featured in [CMU news article on music and AI](https://www.cmu.edu/news/stories/archives/2026/january/as-ai-generated-music-advances-humans-still-lead-in-creativity-cmu-research-finds)
-        - 📜 (Jan 2026) Two papers accepted at ICASSP 2026 including [FoleyBench](https://arxiv.org/abs/2511.13219).
-        - 📜 (Jan 2026) One paper accepted at CHI 2026, preprint forthcoming.
+        - 📜 (Jan 2026) Two papers accepted at ICASSP 2026: [FoleyBench](https://arxiv.org/abs/2511.13219) and work on [music captioning](https://arxiv.org/pdf/2602.03023).
+        - 📜 (Jan 2026) Paper accepted at CHI 2026 on [Live Music Agents](https://arxiv.org/pdf/2602.05064)
         - 📜 (Jan 2026) Our work on [EDIT-Bench](https://arxiv.org/abs/2511.04486) accepted at ICLR 2026.
         - 📜 (Dec 2025) Paper on multi-modal translation for music AI was published in [TASLP](https://ieeexplore.ieee.org/document/11316398/authors#authors)
         - 🎶 (Dec 2025) Our project on *multimodal music AI*, co-led by [Dr. Annie Hsieh](https://www.cmu.edu/cfa/music/people/Bios/hsieh_annie.html), was awarded a grant through the [Schmidt HAVI](https://www.schmidtsciences.org/humanities-and-ai-virtual-institute/) program
